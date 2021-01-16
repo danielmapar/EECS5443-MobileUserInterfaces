@@ -1,0 +1,89 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,11,17,9,4,5,14,10,16,8,2,19,18,15,7,6,13",
+                        "startColumns": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+                        "startOffsets": "114,500,710,408,161,212,599,454,673,360,52,776,745,640,316,260,554",
+                        "endColumns": "46,52,34,45,50,47,40,45,36,47,61,32,30,32,43,55,44",
+                        "endOffsets": "159,551,743,452,210,258,638,498,708,406,112,807,774,671,358,314,597"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "209,259,315,353,402,456,507,551,600,640,691,756,792,826,862,909,968",
+                        "endColumns": "49,55,37,48,53,50,43,48,39,50,64,35,33,35,46,58,47",
+                        "endOffsets": "254,310,348,397,451,502,546,595,635,686,751,787,821,857,904,963,1011"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "196"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "1016",
+                        "endLines": "24",
+                        "endColumns": "12",
+                        "endOffsets": "1157"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/src/main/res/values/icon_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "49",
+                        "endOffsets": "102"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "159",
+                        "endColumns": "49",
+                        "endOffsets": "204"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons_81497/app/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endColumns": "56",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        }
+    ]
+}

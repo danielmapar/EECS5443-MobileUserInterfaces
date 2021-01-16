@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\Demo_Layout\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\Demo_Layout\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\Demo_Layout\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,8,9,5,7,6,3",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "106,289,336,156,242,199,59",
+                        "endColumns": "48,45,43,41,45,41,45",
+                        "endOffsets": "150,330,375,193,283,236,100"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "112,161,207,251,293,339,381",
+                        "endColumns": "48,45,43,41,45,41,45",
+                        "endOffsets": "156,202,246,288,334,376,422"
+                    }
+                }
+            ]
+        }
+    ]
+}

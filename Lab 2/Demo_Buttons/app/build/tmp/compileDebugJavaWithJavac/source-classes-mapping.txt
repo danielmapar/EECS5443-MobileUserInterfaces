@@ -1,0 +1,4 @@
+ca/yorku/eecs/mack/demobuttons/DemoButtonsActivity.java
+ ca.yorku.eecs.mack.demobuttons.DemoButtonsActivity
+ca/yorku/eecs/mack/demobuttons/BuildConfig.java
+ ca.yorku.eecs.mack.demobuttons.BuildConfig

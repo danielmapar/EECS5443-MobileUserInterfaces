@@ -1,0 +1,4 @@
+#Sat Jan 16 01:39:39 EST 2021
+base.0=/Users/daniel/Desktop/workspace/4443/Lab 2/Demo_Buttons/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

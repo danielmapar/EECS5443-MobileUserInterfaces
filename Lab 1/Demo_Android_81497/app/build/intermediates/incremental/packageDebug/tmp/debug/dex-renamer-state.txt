@@ -1,0 +1,4 @@
+#Sat Jan 16 00:53:22 EST 2021
+base.0=/Users/daniel/Desktop/workspace/4443/Demo_Android_81497/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

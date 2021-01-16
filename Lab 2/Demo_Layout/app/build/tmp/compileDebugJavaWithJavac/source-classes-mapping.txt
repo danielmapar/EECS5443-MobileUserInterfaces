@@ -1,0 +1,4 @@
+ca/yorku/eecs/mack/demolayout/BuildConfig.java
+ ca.yorku.eecs.mack.demolayout.BuildConfig
+ca/yorku/eecs/mack/demolayout/DemoLayoutActivity.java
+ ca.yorku.eecs.mack.demolayout.DemoLayoutActivity

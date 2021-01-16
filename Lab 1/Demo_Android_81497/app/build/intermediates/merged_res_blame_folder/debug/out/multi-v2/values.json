@@ -1,0 +1,41 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Demo_Android_81497/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Demo_Android_81497/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,6",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,4",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,269",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,39",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,304"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "112,168,212,260,298,346,415",
+                        "endColumns": "55,43,47,37,47,68,39",
+                        "endOffsets": "163,207,255,293,341,410,450"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Demo_Android_81497/app/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+ca/yorku/eecs/mack/demoandroid81497/BuildConfig.java
+ ca.yorku.eecs.mack.demoandroid81497.BuildConfig
+ca/yorku/eecs/mack/demoandroid81497/DemoAndroid81497Activity.java
+ ca.yorku.eecs.mack.demoandroid81497.DemoAndroid81497Activity
