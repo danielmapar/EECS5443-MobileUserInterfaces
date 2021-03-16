@@ -1,0 +1,49 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ca.yorku.eecs.mack.demoscale"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="13"
+8-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:7:5-22:19
+12        android:allowBackup="false"
+12-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:9:9-36
+13        android:debuggable="true"
+14        android:icon="@mipmap/ic_launcher"
+14-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:10:9-43
+15        android:label="@string/app_name"
+15-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:11:9-41
+16        android:testOnly="true"
+17        android:theme="@android:style/Theme.Holo" >
+17-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:8:9-50
+18        <activity
+18-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:12:9-21:20
+19            android:name="ca.yorku.eecs.mack.demoscale81497.DemoScale81497Activity"
+19-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:13:13-84
+20            android:configChanges="orientation"
+20-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:14:13-48
+21            android:label="@string/app_name" >
+21-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:15:13-45
+22            <intent-filter>
+22-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:16:13-20:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:17:17-69
+23-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:17:25-66
+24                <action android:name="android.intent.action.VIEW" />
+24-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:18:17-69
+24-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:18:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:19:17-77
+26-->/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/AndroidManifest.xml:19:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

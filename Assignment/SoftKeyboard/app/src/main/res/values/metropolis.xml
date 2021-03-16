@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="metropolis">
+        <item>55, 40</item>
+        <item>J, 2, 0, 1, 1</item>
+        <item>B, 3, 0, 1, 1</item>
+        <item>Q, 0.5, 1, 1, 1</item>
+        <item>U, 1.5, 1, 1, 1</item>
+        <item>S, 2.5, 1, 1, 1</item>
+        <item>P, 3.5, 1, 1, 1</item>
+        <item>C, 4.5, 1, 1, 1</item>
+        <item>Bksp, 5.5, 1, 1, 1</item>
+        <item>F, 1, 2, 1, 1</item>
+        <item>O, 2, 2, 1, 1</item>
+        <item>T, 3, 2, 1, 1</item>
+        <item>H, 4, 2, 1, 1</item>
+        <item>V, 5, 2, 1, 1</item>
+        <item>G, 0.5, 3, 1, 1</item>
+        <item>R, 1.5, 3, 1, 1</item>
+        <item>Space, 2.5, 3, 1, 1</item>
+        <item>E, 3.5, 3, 1, 1</item>
+        <item>K, 4.5, 3, 1, 1</item>
+        <item>Enter, 5.5, 3, 1, 1</item>
+        <item>M, 0, 4, 1, 1</item>
+        <item>N, 1, 4, 1, 1</item>
+        <item>I, 2, 4, 1, 1</item>
+        <item>A, 3, 4, 1, 1</item>
+        <item>W, 4, 4, 1, 1</item>
+        <item>Z, 5, 4, 1, 1</item>
+        <item>D, 1.5, 5, 1, 1</item>
+        <item>L, 2.5, 5, 1, 1</item>
+        <item>Y, 3.5, 5, 1, 1</item>
+        <item>X, 4.5, 5, 1, 1</item>
+    </array>
+
+</resources>

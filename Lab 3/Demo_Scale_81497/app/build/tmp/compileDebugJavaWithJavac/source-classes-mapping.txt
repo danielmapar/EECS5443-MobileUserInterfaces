@@ -1,0 +1,11 @@
+ca/yorku/eecs/mack/demoscale81497/StatusPanel.java
+ ca.yorku.eecs.mack.demoscale81497.StatusPanel
+ca/yorku/eecs/mack/demoscale81497/PaintPanel.java
+ ca.yorku.eecs.mack.demoscale81497.PaintPanel
+ ca.yorku.eecs.mack.demoscale81497.PaintPanel$1
+ ca.yorku.eecs.mack.demoscale81497.PaintPanel$MyGestureListener
+ ca.yorku.eecs.mack.demoscale81497.PaintPanel$MyScaleGestureListener
+ca/yorku/eecs/mack/demoscale81497/DemoScale81497Activity.java
+ ca.yorku.eecs.mack.demoscale81497.DemoScale81497Activity
+ca/yorku/eecs/mack/demoscale81497/BuildConfig.java
+ ca.yorku.eecs.mack.demoscale81497.BuildConfig

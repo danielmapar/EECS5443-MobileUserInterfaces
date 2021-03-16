@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Multitouch/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Multitouch/app/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Multitouch/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,5,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "131,184,56",
+                        "endColumns": "52,45,74",
+                        "endOffsets": "179,225,126"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "112,165,211",
+                        "endColumns": "52,45,74",
+                        "endOffsets": "160,206,281"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ca.yorku.cse.mack.softkeyboard"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="12"
+8-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="18" />
+9-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+11-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:7:5-74
+11-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:7:22-72
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:8:5-80
+12-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:9:5-79
+13-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:9:22-77
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:10:5-65
+14-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:10:22-63
+15
+16    <application
+16-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:12:5-29:19
+17        android:allowBackup="false"
+17-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:13:9-36
+18        android:debuggable="true"
+19        android:icon="@drawable/icon"
+19-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:14:9-38
+20        android:label="@string/app_name"
+20-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:15:9-41
+21        android:testOnly="true"
+22        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+22-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:16:9-67
+23        <activity
+23-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:17:9-25:20
+24            android:name="ca.yorku.cse.mack.softkeyboard.SoftKeyboardSetup"
+24-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:18:13-46
+25            android:configChanges="orientation"
+25-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:19:13-48
+26            android:label="@string/app_name" >
+26-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:20:13-45
+27            <intent-filter>
+27-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:21:13-24:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:22:17-68
+28-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:22:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:23:17-76
+30-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:23:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="ca.yorku.cse.mack.softkeyboard.SoftKeyboardActivity" >
+33-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:26:9-28:20
+33-->/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/AndroidManifest.xml:27:13-49
+34        </activity>
+35    </application>
+36
+37</manifest>

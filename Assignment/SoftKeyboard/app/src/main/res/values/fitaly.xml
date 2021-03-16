@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="fitaly">
+        <item>50, 40</item>
+        <item>Z, 0, 0, 1, 1</item>
+        <item>V, 1, 0, 1, 1</item>
+        <item>C, 2, 0, 1, 1</item>
+        <item>H, 3, 0, 1, 1</item>
+        <item>W, 4, 0, 1, 1</item>
+        <item>K, 5, 0, 1, 1</item>
+        <item>Bksp, 6, 0, 1, 1</item>
+        <item>F, 0, 1, 1, 1</item>
+        <item>I, 1, 1, 1, 1</item>
+        <item>T, 2, 1, 1, 1</item>
+        <item>A, 3, 1, 1, 1</item>
+        <item>L, 4, 1, 1, 1</item>
+        <item>Y, 5, 1, 1, 1</item>
+        <item>Space, 0, 2, 2, 1</item>
+        <item>N, 2, 2, 1, 1</item>
+        <item>E, 3, 2, 1, 1</item>
+        <item>Space, 4, 2, 2, 1</item>
+        <item>Enter, 6, 2, 1, 1</item>
+        <item>G, 0, 3, 1, 1</item>
+        <item>D, 1, 3, 1, 1</item>
+        <item>O, 2, 3, 1, 1</item>
+        <item>R, 3, 3, 1, 1</item>
+        <item>S, 4, 3, 1, 1</item>
+        <item>B, 5, 3, 1, 1</item>
+        <item>Q, 0, 4, 1, 1</item>
+        <item>J, 1, 4, 1, 1</item>
+        <item>U, 2, 4, 1, 1</item>
+        <item>M, 3, 4, 1, 1</item>
+        <item>P, 4, 4, 1, 1</item>
+        <item>X, 5, 4, 1, 1</item>
+    </array>
+
+</resources>

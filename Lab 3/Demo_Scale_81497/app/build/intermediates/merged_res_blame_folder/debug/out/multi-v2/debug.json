@@ -1,0 +1,41 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,-1,-1,-1",
+                        "startColumns": "4,-1,-1,-1",
+                        "startOffsets": "161,-1,-1,-1",
+                        "endColumns": "53,-1,-1,-1",
+                        "endOffsets": "210,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "112,166,271,321",
+                        "endColumns": "53,104,49,52",
+                        "endOffsets": "161,266,316,369"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

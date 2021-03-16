@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="alphabet">
+		<item>abcdefghijklmnopqrstuvwxyz</item>
+	</array>
+    <array name="fitaly">
+        <item>50, 40</item>
+        <item>Z, 0, 0, 1, 1</item>
+        <item>V, 1, 0, 1, 1</item>
+        <item>C, 2, 0, 1, 1</item>
+        <item>H, 3, 0, 1, 1</item>
+        <item>W, 4, 0, 1, 1</item>
+        <item>K, 5, 0, 1, 1</item>
+        <item>Bksp, 6, 0, 1, 1</item>
+        <item>F, 0, 1, 1, 1</item>
+        <item>I, 1, 1, 1, 1</item>
+        <item>T, 2, 1, 1, 1</item>
+        <item>A, 3, 1, 1, 1</item>
+        <item>L, 4, 1, 1, 1</item>
+        <item>Y, 5, 1, 1, 1</item>
+        <item>Space, 0, 2, 2, 1</item>
+        <item>N, 2, 2, 1, 1</item>
+        <item>E, 3, 2, 1, 1</item>
+        <item>Space, 4, 2, 2, 1</item>
+        <item>Enter, 6, 2, 1, 1</item>
+        <item>G, 0, 3, 1, 1</item>
+        <item>D, 1, 3, 1, 1</item>
+        <item>O, 2, 3, 1, 1</item>
+        <item>R, 3, 3, 1, 1</item>
+        <item>S, 4, 3, 1, 1</item>
+        <item>B, 5, 3, 1, 1</item>
+        <item>Q, 0, 4, 1, 1</item>
+        <item>J, 1, 4, 1, 1</item>
+        <item>U, 2, 4, 1, 1</item>
+        <item>M, 3, 4, 1, 1</item>
+        <item>P, 4, 4, 1, 1</item>
+        <item>X, 5, 4, 1, 1</item>
+    </array>
+    <array name="lewis">
+        <item>60, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>R, 1, 0, 1, 1</item>
+        <item>W, 2, 0, 1, 1</item>
+        <item>X, 3, 0, 1, 1</item>
+        <item>Y, 4, 0, 1, 1</item>
+        <item>Bksp, 5, 0, 1, 1</item>
+        <item>L, 0, 1, 1, 1</item>
+        <item>U, 1, 1, 1, 1</item>
+        <item>A, 2, 1, 1, 1</item>
+        <item>O, 3, 1, 1, 1</item>
+        <item>F, 4, 1, 1, 1</item>
+        <item>T, 0, 2, 1, 1</item>
+        <item>H, 1, 2, 1, 1</item>
+        <item>E, 2, 2, 1, 1</item>
+        <item>N, 3, 2, 1, 1</item>
+        <item>G, 4, 2, 1, 1</item>
+        <item>Enter, 5, 2, 1, 1</item>
+        <item>V, 0, 3, 1, 1</item>
+        <item>D, 1, 3, 1, 1</item>
+        <item>I, 2, 3, 1, 1</item>
+        <item>S, 3, 3, 1, 1</item>
+        <item>P, 4, 3, 1, 1</item>
+        <item>B, 0, 4, 1, 1</item>
+        <item>C, 1, 4, 1, 1</item>
+        <item>M, 2, 4, 1, 1</item>
+        <item>J, 3, 4, 1, 1</item>
+        <item>K, 4, 4, 1, 1</item>
+        <item>Z, 5, 4, 1, 1</item>
+        <item>Space, 0, 5, 6, 1</item>
+    </array>
+    <array name="metropolis">
+        <item>55, 40</item>
+        <item>J, 2, 0, 1, 1</item>
+        <item>B, 3, 0, 1, 1</item>
+        <item>Q, 0.5, 1, 1, 1</item>
+        <item>U, 1.5, 1, 1, 1</item>
+        <item>S, 2.5, 1, 1, 1</item>
+        <item>P, 3.5, 1, 1, 1</item>
+        <item>C, 4.5, 1, 1, 1</item>
+        <item>Bksp, 5.5, 1, 1, 1</item>
+        <item>F, 1, 2, 1, 1</item>
+        <item>O, 2, 2, 1, 1</item>
+        <item>T, 3, 2, 1, 1</item>
+        <item>H, 4, 2, 1, 1</item>
+        <item>V, 5, 2, 1, 1</item>
+        <item>G, 0.5, 3, 1, 1</item>
+        <item>R, 1.5, 3, 1, 1</item>
+        <item>Space, 2.5, 3, 1, 1</item>
+        <item>E, 3.5, 3, 1, 1</item>
+        <item>K, 4.5, 3, 1, 1</item>
+        <item>Enter, 5.5, 3, 1, 1</item>
+        <item>M, 0, 4, 1, 1</item>
+        <item>N, 1, 4, 1, 1</item>
+        <item>I, 2, 4, 1, 1</item>
+        <item>A, 3, 4, 1, 1</item>
+        <item>W, 4, 4, 1, 1</item>
+        <item>Z, 5, 4, 1, 1</item>
+        <item>D, 1.5, 5, 1, 1</item>
+        <item>L, 2.5, 5, 1, 1</item>
+        <item>Y, 3.5, 5, 1, 1</item>
+        <item>X, 4.5, 5, 1, 1</item>
+    </array>
+    <array name="opti">
+        <item>45, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>F, 1, 0, 1, 1</item>
+        <item>U, 2, 0, 1, 1</item>
+        <item>M, 3, 0, 1, 1</item>
+        <item>C, 4, 0, 1, 1</item>
+        <item>K, 5, 0, 1, 1</item>
+        <item>Z, 6, 0, 1, 1</item>
+        <item>Space, 0, 1, 2, 1</item>
+        <item>O, 2, 1, 1, 1</item>
+        <item>T, 3, 1, 1, 1</item>
+        <item>H, 4, 1, 1, 1</item>
+        <item>Space, 5, 1, 2, 1</item>
+        <item>B, 0, 2, 1, 1</item>
+        <item>S, 1, 2, 1, 1</item>
+        <item>R, 2, 2, 1, 1</item>
+        <item>E, 3, 2, 1, 1</item>
+        <item>A, 4, 2, 1, 1</item>
+        <item>W, 5, 2, 1, 1</item>
+        <item>X, 6, 2, 1, 1</item>
+        <item>Space, 0, 3, 2, 1</item>
+        <item>I, 2, 3, 1, 1</item>
+        <item>N, 3, 3, 1, 1</item>
+        <item>D, 4, 3, 1, 1</item>
+        <item>Space, 5, 3, 2, 1</item>
+        <item>J, 0, 4, 1, 1</item>
+        <item>P, 1, 4, 1, 1</item>
+        <item>V, 2, 4, 1, 1</item>
+        <item>G, 3, 4, 1, 1</item>
+        <item>L, 4, 4, 1, 1</item>
+        <item>Y, 5, 4, 1, 1</item>
+        <item>Bksp, 7, 0, 1, 1</item>
+        <item>Enter, 7, 2, 1, 1</item>
+    </array>
+    <array name="opti2">
+        <item>50, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>K, 1, 0, 1, 1</item>
+        <item>C, 2, 0, 1, 1</item>
+        <item>G, 3, 0, 1, 1</item>
+        <item>V, 4, 0, 1, 1</item>
+        <item>J, 5, 0, 1, 1</item>
+        <item>Bksp, 6, 0, 1, 1</item>
+        <item>Space, 0, 1, 1, 1</item>
+        <item>S, 1, 1, 1, 1</item>
+        <item>I, 2, 1, 1, 1</item>
+        <item>N, 3, 1, 1, 1</item>
+        <item>D, 4, 1, 1, 1</item>
+        <item>Space, 5, 1, 1, 1</item>
+        <item>W, 0, 2, 1, 1</item>
+        <item>H, 1, 2, 1, 1</item>
+        <item>T, 2, 2, 1, 1</item>
+        <item>E, 3, 2, 1, 1</item>
+        <item>A, 4, 2, 1, 1</item>
+        <item>M, 5, 2, 1, 1</item>
+        <item>Space, 0, 3, 1, 1</item>
+        <item>U, 1, 3, 1, 1</item>
+        <item>O, 2, 3, 1, 1</item>
+        <item>R, 3, 3, 1, 1</item>
+        <item>L, 4, 3, 1, 1</item>
+        <item>Space, 5, 3, 1, 1</item>
+        <item>Z, 0, 4, 1, 1</item>
+        <item>B, 1, 4, 1, 1</item>
+        <item>F, 2, 4, 1, 1</item>
+        <item>Y, 3, 4, 1, 1</item>
+        <item>P, 4, 4, 1, 1</item>
+        <item>X, 5, 4, 1, 1</item>
+        <item>Enter, 6, 2, 1, 1</item>
+    </array>
+    <array name="phrases100">
+		<item>My watch fell in the water.</item>
+		<item>Breathing is difficult.</item>
+		<item>I can see the rings on Saturn.</item>
+		<item>Physics and chemistry are hard.</item>
+		<item>My bank account is overdrawn.</item>
+		<item>Elections bring out the best.</item>
+		<item>We\'re having spaghetti.</item>
+		<item>Elephants are afraid of mice.</item>
+		<item>My favorite subject is psychology.</item>
+		<item>Watch out for low flying objects.</item>
+		<item>If at first you don\'t succeed, ...</item>
+		<item>Please provide your date of birth.</item>
+		<item>Prayer in schools offends some.</item>
+		<item>He\'s just like everyone else.</item>
+		<item>Love means many things.</item>
+		<item>You must be getting old.</item>
+		<item>The world is a stage.</item>
+		<item>Can I skate with my sister today?</item>
+		<item>Beware the ides of March!</item>
+		<item>I agree with you.</item>
+		<item>Don\'t say anything.</item>
+		<item>Play it again, Sam.</item>
+		<item>The force is with you.</item>
+		<item>You\'re not a Jedi yet.</item>
+		<item>Are you talking to me?</item>
+		<item>Yes - you are very smart!</item>
+		<item>Hair gel is very greasy.</item>
+		<item>The facts get in the way.</item>
+		<item>Did you have a good time?</item>
+		<item>Space is a high priority.</item>
+		<item>You\'re a wonderful example.</item>
+		<item>Don\'t squander your time.</item>
+		<item>Don\'t drink too much.</item>
+		<item>Take a coffee break!</item>
+		<item>Popularity is desired by all.</item>
+		<item>The music is better than it sounds.</item>
+		<item>The living is easy.</item>
+		<item>Fish are jumping, and the cotton is high.</item>
+		<item>I took the rover from the shop.</item>
+		<item>Come and see our new car!</item>
+		<item>I\'m going to a music lesson.</item>
+		<item>The opposing team is over there.</item>
+		<item>Soon, we will return from the city.</item>
+		<item>I\'m wearing a tie and jacket.</item>
+		<item>The quick brown fox jumps over the lazy dog.</item>
+		<item>There\'ll be some fog tonight.</item>
+		<item>I\'m allergic to bees and peanuts.</item>
+		<item>He\'s still on our team.</item>
+		<item>The Dow-Jones index has risen!</item>
+		<item>My preferred treat is chocolate.</item>
+		<item>The king sends you to the tower.</item>
+		<item>We are subjects and must obey!</item>
+		<item>Mom made her a turtleneck.</item>
+		<item>We went grocery shopping.</item>
+		<item>The assignment is due today.</item>
+		<item>What you see is what you get.</item>
+		<item>The store will close at ten.</item>
+		<item>The laser printer is jammed.</item>
+		<item>All good boys deserve fudge!</item>
+		<item>Call for more details.</item>
+		<item>Have a good weekend!</item>
+		<item>What a monkey sees, a monkey will do.</item>
+		<item>That\'s very unfortunate.</item>
+		<item>This is a very good idea.</item>
+		<item>Reading week is just about here.</item>
+		<item>Our fax number has changed.</item>
+		<item>Thank you for your help.</item>
+		<item>The early bird gets the worm.</item>
+		<item>Buckle up for safety!</item>
+		<item>This is too much to handle.</item>
+		<item>Protect your environment.</item>
+		<item>World population is growing.</item>
+		<item>The library is closed today.</item>
+		<item>Mary had a little lamb.</item>
+		<item>Teaching services will help.</item>
+		<item>We accept personal checks.</item>
+		<item>This is a non-profit organization.</item>
+		<item>Healthy food is good for you.</item>
+		<item>This watch is too expensive.</item>
+		<item>The postal service is very slow.</item>
+		<item>I don\'t fully agree with you.</item>
+		<item>Gas bills are sent monthly.</item>
+		<item>Earth quakes are predictable.</item>
+		<item>Life\'s but a dream.</item>
+		<item>Take it to the recycling depot!</item>
+		<item>Fall is my favorite season.</item>
+		<item>A fox is a very smart animal.</item>
+		<item>The kids are very excited.</item>
+		<item>My bike has a flat tire.</item>
+		<item>Don\'t walk too quickly!</item>
+		<item>A duck quacks to ask for food.</item>
+		<item>The four seasons will come.</item>
+		<item>The sun rises in the east.</item>
+		<item>It\'s very windy today.</item>
+		<item>Don\'t worry about this.</item>
+		<item>Want to join us for lunch?</item>
+		<item>Stay away from strangers!</item>
+		<item>Lydia wants to go home.</item>
+		<item>Rent is paid at the beginning of the month!</item>
+		<item>If you come home late, the doors are locked.</item>
+	</array>
+    <array name="phrases2">
+		<item>my watch fell in the water</item>
+		<item>prevailing wind from the east</item>
+		<item>never too rich and never too thin</item>
+		<item>breathing is difficult</item>
+		<item>I can see the rings on Saturn</item>
+		<item>physics and chemistry are hard</item>
+		<item>my bank account is overdrawn</item>
+		<item>elections bring out the best</item>
+		<item>we are having spaghetti</item>
+		<item>time to go shopping</item>
+		<item>a problem with the engine</item>
+		<item>elephants are afraid of mice</item>
+		<item>my favorite place to visit</item>
+		<item>three two one zero blast off</item>
+		<item>my favorite subject is psychology</item>
+		<item>circumstances are unacceptable</item>
+		<item>watch out for low flying objects</item>
+		<item>if at first you do not succeed</item>
+		<item>please provide your date of birth</item>
+		<item>we run the risk of failure</item>
+		<item>prayer in schools offends some</item>
+		<item>he is just like everyone else</item>
+		<item>great disturbance in the force</item>
+		<item>love means many things</item>
+		<item>you must be getting old</item>
+		<item>the world is a stage</item>
+		<item>can I skate with sister today</item>
+		<item>neither a borrower nor a lender be</item>
+		<item>one heck of a question</item>
+		<item>question that must be answered</item>
+		<item>beware the ides of March</item>
+		<item>double double toil and trouble</item>
+		<item>the power of denial</item>
+		<item>I agree with you</item>
+		<item>do not say anything</item>
+		<item>play it again Sam</item>
+		<item>the force is with you</item>
+		<item>you are not a jedi yet</item>
+		<item>an offer you cannot refuse</item>
+		<item>are you talking to me</item>
+		<item>yes you are very smart</item>
+		<item>all work and no play</item>
+		<item>hair gel is very greasy</item>
+		<item>Valium in the economy size</item>
+		<item>the facts get in the way</item>
+		<item>the dreamers of dreams</item>
+		<item>did you have a good time</item>
+		<item>space is a high priority</item>
+		<item>you are a wonderful example</item>
+		<item>do not squander your time</item>
+		<item>do not drink too much</item>
+		<item>take a coffee break</item>
+		<item>popularity is desired by all</item>
+		<item>the music is better than it sounds</item>
+		<item>starlight and dewdrop</item>
+		<item>the living is easy</item>
+		<item>fish are jumping</item>
+		<item>the cotton is high</item>
+		<item>drove my chevy to the levee</item>
+		<item>but the levee was dry</item>
+		<item>I took the rover from the shop</item>
+		<item>movie about a nutty professor</item>
+		<item>come and see our new car</item>
+		<item>coming up with killer sound bites</item>
+		<item>I am going to a music lesson</item>
+		<item>the opposing team is over there</item>
+		<item>soon we will return from the city</item>
+		<item>I am wearing a tie and a jacket</item>
+		<item>the quick brown fox jumped</item>
+		<item>all together in one big pile</item>
+		<item>wear a crown with many jewels</item>
+		<item>there will be some fog tonight</item>
+		<item>I am allergic to bees and peanuts</item>
+		<item>he is still on our team</item>
+		<item>the dow jones index has risen</item>
+		<item>my preferred treat is chocolate</item>
+		<item>the king sends you to the tower</item>
+		<item>we are subjects and must obey</item>
+		<item>mom made her a turtleneck</item>
+		<item>goldilocks and the three bears</item>
+		<item>we went grocery shopping</item>
+		<item>the assignment is due today</item>
+		<item>what you see is what you get</item>
+		<item>for your information only</item>
+		<item>a quarter of a century</item>
+		<item>the store will close at ten</item>
+		<item>head shoulders knees and toes</item>
+		<item>vanilla flavored ice cream</item>
+		<item>frequently asked questions</item>
+		<item>round robin scheduling</item>
+		<item>information super highway</item>
+		<item>my favorite web browser</item>
+		<item>the laser printer is jammed</item>
+		<item>all good boys deserve fudge</item>
+		<item>the second largest country</item>
+		<item>call for more details</item>
+		<item>just in time for the party</item>
+		<item>have a good weekend</item>
+		<item>video camera with a zoom lens</item>
+		<item>what a monkey sees a monkey will do</item>
+		<item>that is very unfortunate</item>
+		<item>the back yard of our house</item>
+		<item>this is a very good idea</item>
+		<item>reading week is just about here</item>
+		<item>our fax number has changed</item>
+		<item>thank you for your help</item>
+		<item>no exchange without a bill</item>
+		<item>the early bird gets the worm</item>
+		<item>buckle up for safety</item>
+		<item>this is too much to handle</item>
+		<item>protect your environment</item>
+		<item>world population is growing</item>
+		<item>the library is closed today</item>
+		<item>Mary had a little lamb</item>
+		<item>teaching services will help</item>
+		<item>we accept personal checks</item>
+		<item>this is a non profit organization</item>
+		<item>user friendly interface</item>
+		<item>healthy food is good for you</item>
+		<item>hands on experience with a job</item>
+		<item>this watch is too expensive</item>
+		<item>the postal service is very slow</item>
+		<item>communicate through email</item>
+		<item>the capital of our nation</item>
+		<item>travel at the speed of light</item>
+		<item>I do not fully agree with you</item>
+		<item>gas bills are sent monthly</item>
+		<item>earth quakes are predictable</item>
+		<item>life is but a dream</item>
+		<item>take it to the recycling depot</item>
+		<item>sent this by registered mail</item>
+		<item>fall is my favorite season</item>
+		<item>a fox is a very smart animal</item>
+		<item>the kids are very excited</item>
+		<item>parking lot is full of trucks</item>
+		<item>my bike has a flat tire</item>
+		<item>do not walk too quickly</item>
+		<item>a duck quacks to ask for food</item>
+		<item>limited warranty of two years</item>
+		<item>the four seasons will come</item>
+		<item>the sun rises in the east</item>
+		<item>it is very windy today</item>
+		<item>do not worry about this</item>
+		<item>dashing through the snow</item>
+		<item>want to join us for lunch</item>
+		<item>stay away from strangers</item>
+		<item>accompanied by an adult</item>
+		<item>see you later alligator</item>
+		<item>make my day you sucker</item>
+		<item>I can play much better now</item>
+		<item>she wears too much makeup</item>
+		<item>my bare face in the wind</item>
+		<item>batman wears a cape</item>
+		<item>I hate baking pies</item>
+		<item>lydia wants to go home</item>
+		<item>win first prize in the contest</item>
+		<item>freud wrote of the ego</item>
+		<item>I do not care if you do that</item>
+		<item>always cover all the bases</item>
+		<item>nobody cares anymore</item>
+		<item>can we play cards tonight</item>
+		<item>get rid of that immediately</item>
+		<item>I watched blazing saddles</item>
+		<item>the sum of the parts</item>
+		<item>they love to yap about nothing</item>
+		<item>peek out the window</item>
+		<item>be home before midnight</item>
+		<item>he played a pimp in that movie</item>
+		<item>I skimmed through your proposal</item>
+		<item>he was wearing a sweatshirt</item>
+		<item>no more war no more bloodshed</item>
+		<item>toss the ball around</item>
+		<item>I will meet you at noon</item>
+		<item>I want to hold your hand</item>
+		<item>the children are playing</item>
+		<item>superman never wore a mask</item>
+		<item>I listen to the tape everyday</item>
+		<item>he is shouting loudly</item>
+		<item>correct your diction immediately</item>
+		<item>seasoned golfers love the game</item>
+		<item>he cooled off after she left</item>
+		<item>my dog sheds his hair</item>
+		<item>join us on the patio</item>
+		<item>these cookies are so amazing</item>
+		<item>I can still feel your presence</item>
+		<item>the dog will bite you</item>
+		<item>a most ridiculous thing</item>
+		<item>where did you get that tie</item>
+		<item>what a lovely red jacket</item>
+		<item>do you like to shop on Sunday</item>
+		<item>I spilled coffee on the carpet</item>
+		<item>the largest of the five oceans</item>
+		<item>shall we play a round of cards</item>
+		<item>olympic athletes use drugs</item>
+		<item>my mother makes good cookies</item>
+		<item>do a good deed to someone</item>
+		<item>quick there is someone knocking</item>
+		<item>flashing red light means stop</item>
+		<item>sprawling subdivisions are bad</item>
+		<item>where did I leave my glasses</item>
+		<item>on the way to the cottage</item>
+		<item>a lot of chlorine in the water</item>
+		<item>do not drink the water</item>
+		<item>my car always breaks in the winter</item>
+		<item>santa claus got stuck</item>
+		<item>public transit is much faster</item>
+		<item>zero in on the facts</item>
+		<item>make up a few more phrases</item>
+		<item>my fingers are very cold</item>
+		<item>rain rain go away</item>
+		<item>bad for the environment</item>
+		<item>universities are too expensive</item>
+		<item>the price of gas is high</item>
+		<item>the winner of the race</item>
+		<item>we drive on parkways</item>
+		<item>we park in driveways</item>
+		<item>go out for some pizza and beer</item>
+		<item>effort is what it will take</item>
+		<item>where can my little dog be</item>
+		<item>if you were not so stupid</item>
+		<item>not quite so smart as you think</item>
+		<item>do you like to go camping</item>
+		<item>this person is a disaster</item>
+		<item>the imagination of the nation</item>
+		<item>universally understood to be wrong</item>
+		<item>listen to five hours of opera</item>
+		<item>an occasional taste of chocolate</item>
+		<item>victims deserve more redress</item>
+		<item>the protesters blocked all traffic</item>
+		<item>the acceptance speech was boring</item>
+		<item>work hard to reach the summit</item>
+		<item>a little encouragement is needed</item>
+		<item>stiff penalty for staying out late</item>
+		<item>the pen is mightier than the sword</item>
+		<item>exceed the maximum speed limit</item>
+		<item>in sharp contrast to your words</item>
+		<item>this leather jacket is too warm</item>
+		<item>consequences of a wrong turn</item>
+		<item>this mission statement is baloney</item>
+		<item>you will loose your voice</item>
+		<item>every apple from every tree</item>
+		<item>are you sure you want this</item>
+		<item>the fourth edition was better</item>
+		<item>this system of taxation</item>
+		<item>beautiful paintings in the gallery</item>
+		<item>a yard is almost as a meter</item>
+		<item>we missed your birthday</item>
+		<item>coalition governments never work</item>
+		<item>destruction of the rain forest</item>
+		<item>I like to play tennis</item>
+		<item>acutely aware of her good looks</item>
+		<item>you want to eat your cake</item>
+		<item>machinery is too complicated</item>
+		<item>a glance in the right direction</item>
+		<item>I just cannot figure this out</item>
+		<item>please follow the guidelines</item>
+		<item>an airport is a very busy place</item>
+		<item>mystery of the lost lagoon</item>
+		<item>is there any indication of this</item>
+		<item>the chamber makes important decisions</item>
+		<item>this phenomenon will never occur</item>
+		<item>obligations must be met first</item>
+		<item>valid until the end of the year</item>
+		<item>file all complaints in writing</item>
+		<item>tickets are very expensive</item>
+		<item>a picture is worth many words</item>
+		<item>this camera takes nice photographs</item>
+		<item>it looks like a shack</item>
+		<item>the dog buried the bone</item>
+		<item>the daring young man</item>
+		<item>this equation is too complicated</item>
+		<item>express delivery is very fast</item>
+		<item>I will put on my glasses</item>
+		<item>a touchdown in the last minute</item>
+		<item>the treasury department is broke</item>
+		<item>a good response to the question</item>
+		<item>well connected with people</item>
+		<item>the bathroom is good for reading</item>
+		<item>the generation gap gets wider</item>
+		<item>chemical spill took forever</item>
+		<item>prepare for the exam in advance</item>
+		<item>interesting observation was made</item>
+		<item>bank transaction was not registered</item>
+		<item>your etiquette needs some work</item>
+		<item>we better investigate this</item>
+		<item>stability of the nation</item>
+		<item>house with new electrical panel</item>
+		<item>our silver anniversary is coming</item>
+		<item>the presidential suite is very busy</item>
+		<item>the punishment should fit the crime</item>
+		<item>sharp cheese keeps the mind sharp</item>
+		<item>the registration period is over</item>
+		<item>you have my sympathy</item>
+		<item>the objective of the exercise</item>
+		<item>historic meeting without a result</item>
+		<item>very reluctant to enter</item>
+		<item>good at addition and subtraction</item>
+		<item>six daughters and seven sons</item>
+		<item>a thoroughly disgusting thing to say</item>
+		<item>sign the withdrawal slip</item>
+		<item>relations are very strained</item>
+		<item>the minimum amount of time</item>
+		<item>a very traditional way to dress</item>
+		<item>the aspirations of a nation</item>
+		<item>medieval times were very hard</item>
+		<item>a security force of eight thousand</item>
+		<item>there are winners and losers</item>
+		<item>the voters turfed him out</item>
+		<item>pay off a mortgage for a house</item>
+		<item>the collapse of the Roman empire</item>
+		<item>did you see that spectacular explosion</item>
+		<item>keep receipts for all your expenses</item>
+		<item>the assault took six months</item>
+		<item>get your priorities in order</item>
+		<item>traveling requires a lot of fuel</item>
+		<item>longer than a football field</item>
+		<item>a good joke deserves a good laugh</item>
+		<item>the union will go on strike</item>
+		<item>never mix religion and politics</item>
+		<item>interactions between men and women</item>
+		<item>where did you get such a silly idea</item>
+		<item>it should be sunny tomorrow</item>
+		<item>a psychiatrist will help you</item>
+		<item>you should visit a doctor</item>
+		<item>you must make an appointment</item>
+		<item>the fax machine is broken</item>
+		<item>players must know all the rules</item>
+		<item>a dog is the best friend of a man</item>
+		<item>would you like to come to my house</item>
+		<item>February has an extra day</item>
+		<item>do not feel too bad about it</item>
+		<item>this library has many books</item>
+		<item>construction makes traveling difficult</item>
+		<item>he called seven times</item>
+		<item>that is a very odd question</item>
+		<item>a feeling of complete exasperation</item>
+		<item>we must redouble our efforts</item>
+		<item>no kissing in the library</item>
+		<item>that agreement is rife with problems</item>
+		<item>vote according to your conscience</item>
+		<item>my favourite sport is racketball</item>
+		<item>sad to hear that news</item>
+		<item>the gun discharged by accident</item>
+		<item>one of the poorest nations</item>
+		<item>the algorithm is too complicated</item>
+		<item>your presentation was inspiring</item>
+		<item>that land is owned by the government</item>
+		<item>burglars never leave their business card</item>
+		<item>the fire blazed all weekend</item>
+		<item>if diplomacy does not work</item>
+		<item>please keep this confidential</item>
+		<item>the rationale behind the decision</item>
+		<item>the cat has a pleasant temperament</item>
+		<item>our housekeeper does a thorough job</item>
+		<item>her majesty visited our country</item>
+		<item>handicapped persons need consideration</item>
+		<item>these barracks are big enough</item>
+		<item>sing the gospel and the blues</item>
+		<item>he underwent triple bypass surgery</item>
+		<item>the ropes of a new organization</item>
+		<item>peering through a small hole</item>
+		<item>rapidly running short on words</item>
+		<item>it is difficult to concentrate</item>
+		<item>give me one spoonful of coffee</item>
+		<item>two or three cups of coffee</item>
+		<item>just like it says on the can good</item>
+		<item>companies announce a merger</item>
+		<item>electric cars need big fuel cells</item>
+		<item>the plug does not fit the socket</item>
+		<item>drugs should be avoided</item>
+		<item>the most beautiful sunset</item>
+		<item>we dine out on the weekends</item>
+		<item>get aboard the ship is leaving</item>
+		<item>the water was monitored daily</item>
+		<item>he watched in astonishment</item>
+		<item>a big scratch on the tabletop</item>
+		<item>salesmen must make their monthly quota</item>
+		<item>saving that child was an heroic effort</item>
+		<item>granite is the hardest of all rocks</item>
+		<item>bring the offenders to justice</item>
+		<item>every Saturday he folds the laundry</item>
+		<item>careless driving results in a fine</item>
+		<item>microscopes make small things look big</item>
+		<item>a coupon for a free sample</item>
+		<item>fine but only in moderation</item>
+		<item>a subject one can really enjoy</item>
+		<item>important for political parties</item>
+		<item>that sticker needs to be validated</item>
+		<item>the fire raged for an entire month</item>
+		<item>one never takes too many precautions</item>
+		<item>we have enough witnesses</item>
+		<item>labour unions know how to organize</item>
+		<item>people blow their horn a lot</item>
+		<item>a correction had to be published</item>
+		<item>I like baroque and classical music</item>
+		<item>the proprietor was unavailable</item>
+		<item>be discreet about your meeting</item>
+		<item>meet tomorrow in the lavatory</item>
+		<item>suburbs are sprawling up everywhere</item>
+		<item>shivering is one way to keep warm</item>
+		<item>dolphins leap high out of the water</item>
+		<item>try to enjoy your maternity leave</item>
+		<item>the ventilation system is broken</item>
+		<item>dinosaurs have been extinct for ages</item>
+		<item>an inefficient way to heat a house</item>
+		<item>the bus was very crowded</item>
+		<item>an injustice is committed every day</item>
+		<item>the coronation was very exciting</item>
+		<item>look in the syllabus for the course</item>
+		<item>rectangular objects have four sides</item>
+		<item>prescription drugs require a note</item>
+		<item>the insulation is not working</item>
+		<item>nothing finer than discovering a treasure</item>
+		<item>our life expectancy has increased</item>
+		<item>the cream rises to the top</item>
+		<item>the high waves will swamp us</item>
+		<item>the treasurer must balance her books</item>
+		<item>completely sold out of that</item>
+		<item>the location of the crime</item>
+		<item>the chancellor was very boring</item>
+		<item>the accident scene is a shrine for fans</item>
+		<item>a tumor is OK provided it is benign</item>
+		<item>please take a bath this month</item>
+		<item>rent is paid at the beginning of the month</item>
+		<item>for murder you get a long prison sentence</item>
+		<item>a much higher risk of getting cancer</item>
+		<item>quit while you are ahead</item>
+		<item>knee bone is connected to the thigh bone</item>
+		<item>safe to walk the streets in the evening</item>
+		<item>luckily my wallet was found</item>
+		<item>one hour is allotted for questions</item>
+		<item>so you think you deserve a raise</item>
+		<item>they watched the entire movie</item>
+		<item>good jobs for those with education</item>
+		<item>jumping right out of the water</item>
+		<item>the trains are always late</item>
+		<item>sit at the front of the bus</item>
+		<item>do you prefer a window seat</item>
+		<item>the food at this restaurant</item>
+		<item>Canada has ten provinces</item>
+		<item>the elevator door appears to be stuck</item>
+		<item>raindrops keep falling on my head</item>
+		<item>spill coffee on the carpet</item>
+		<item>an excellent way to communicate</item>
+		<item>with each step forward</item>
+		<item>faster than a speeding bullet</item>
+		<item>wishful thinking is fine</item>
+		<item>nothing wrong with his style</item>
+		<item>arguing with the boss is futile</item>
+		<item>taking the train is usually faster</item>
+		<item>what goes up must come down</item>
+		<item>be persistent to win a strike</item>
+		<item>presidents drive expensive cars</item>
+		<item>the stock exchange dipped</item>
+		<item>why do you ask silly questions</item>
+		<item>that is a very nasty cut</item>
+		<item>what to do when the oil runs dry</item>
+		<item>learn to walk before you run</item>
+		<item>insurance is important for bad drivers</item>
+		<item>traveling to conferences is fun</item>
+		<item>do you get nervous when you speak</item>
+		<item>pumping helps if the roads are slippery</item>
+		<item>parking tickets can be challenged</item>
+		<item>apartments are too expensive</item>
+		<item>find a nearby parking spot</item>
+		<item>gun powder must be handled with care</item>
+		<item>just what the doctor ordered</item>
+		<item>a rattle snake is very poisonous</item>
+		<item>weeping willows are found near water</item>
+		<item>I cannot believe I ate the whole thing</item>
+		<item>the biggest hamburger I have ever seen</item>
+		<item>gamblers eventually loose their shirts</item>
+		<item>exercise is good for the mind</item>
+		<item>irregular verbs are the hardest to learn</item>
+		<item>they might find your comment offensive</item>
+		<item>tell a lie and your nose will grow</item>
+		<item>an enlarged nose suggests you are a liar</item>
+		<item>lie detector tests never work</item>
+		<item>do not lie in court or else</item>
+		<item>most judges are very honest</item>
+		<item>only an idiot would lie in court</item>
+		<item>important news always seems to be late</item>
+		<item>please try to be home before midnight</item>
+		<item>if you come home late the doors are locked</item>
+		<item>dormitory doors are locked at midnight</item>
+		<item>staying up all night is a bad idea</item>
+		<item>you are a capitalist pig</item>
+		<item>motivational seminars make me sick</item>
+		<item>questioning the wisdom of the courts</item>
+		<item>rejection letters are discouraging</item>
+		<item>the first time he tried to swim</item>
+		<item>that referendum asked a silly question</item>
+		<item>a steep learning curve in riding a unicycle</item>
+		<item>a good stimulus deserves a good response</item>
+		<item>everybody looses in custody battles</item>
+		<item>put garbage in an abandoned mine</item>
+		<item>employee recruitment takes a lot of effort</item>
+		<item>experience is hard to come by</item>
+		<item>everyone wants to win the lottery</item>
+		<item>the picket line gives me the chills</item>
+    </array>
+    <array name="quickbrownfox">
+		<item>the quick brown fox jumps over the lazy dog</item>
+	</array>
+    <array name="qwerty">
+        <item>36, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>W, 1, 0, 1, 1</item>
+        <item>E, 2, 0, 1, 1</item>
+        <item>R, 3, 0, 1, 1</item>
+        <item>T, 4, 0, 1, 1</item>
+        <item>Y, 5, 0, 1, 1</item>
+        <item>U, 6, 0, 1, 1</item>
+        <item>I, 7, 0, 1, 1</item>
+        <item>O, 8, 0, 1, 1</item>
+        <item>P, 9, 0, 1, 1</item>
+        <item>A, 0.3333, 1, 1, 1</item>
+        <item>S, 1.3333, 1, 1, 1</item>
+        <item>D, 2.3333, 1, 1, 1</item>
+        <item>F, 3.3333, 1, 1, 1</item>
+        <item>G, 4.3333, 1, 1, 1</item>
+        <item>H, 5.3333, 1, 1, 1</item>
+        <item>J, 6.3333, 1, 1, 1</item>
+        <item>K, 7.3333, 1, 1, 1</item>
+        <item>L, 8.3333, 1, 1, 1</item>
+        <item>Z, 0.6666, 2, 1, 1</item>
+        <item>X, 1.6666, 2, 1, 1</item>
+        <item>C, 2.6666, 2, 1, 1</item>
+        <item>V, 3.6666, 2, 1, 1</item>
+        <item>B, 4.6666, 2, 1, 1</item>
+        <item>N, 5.6666, 2, 1, 1</item>
+        <item>M, 6.6666, 2, 1, 1</item>
+        <item>Space, 2, 3, 6, 1</item>
+        <item>Enter, 8, 3, 2, 1</item>
+        <item>Bksp, 7.666, 2, 2.333, 1</item>
+    </array>
+    <string name="app_name">SoftKeyboard</string>
+    <string name="blockcode">Block code</string>
+    <string name="conditioncode">Condition code</string>
+    <string name="exit">Exit</string>
+    <string name="groupcode">Group code</string>
+    <string name="hintText">(text goes here)</string>
+    <string name="hint_presented"/>
+    <string name="hint_transcribed"/>
+    <string name="lowercaseonly">Lowercase only"</string>
+    <string name="numberofphrases">Number of phrases</string>
+    <string name="ok">OK</string>
+    <string name="participantcode">Participant code</string>
+    <string name="phrasesfile">Phrases file</string>
+    <string name="save">Save</string>
+    <string name="sessioncode">Session code</string>
+    <string name="setupBlockCode">Block code</string>
+    <string name="setupConditionCode">Condition code</string>
+    <string name="setupGroupCode">Group code</string>
+    <string name="setupKeyboardLayout">Keyboard layout</string>
+    <string name="setupKeyboardScale">Keyboard scale</string>
+    <string name="setupLowercaseOnly">Lowercase only</string>
+    <string name="setupNumberOfPhrases">Number of phrases</string>
+    <string name="setupOffsetFromBottom">Offset from bottom</string>
+    <string name="setupPartcipantCode">Participant code</string>
+    <string name="setupPhrasesFile">Phrases file</string>
+    <string name="setupSessionCode">Session code</string>
+    <string name="setupShowPopupKey">Show popup key</string>
+    <string name="setupShowPresentedTextDuringEntry">Show presented text during entry</string>
+    <string name="setup_subtitle">(SoftKeyboard Experiment)</string>
+    <string name="setup_title">Setup</string>
+    <string name="showrecognizedtextduringentry">Show recognized text during entry</string>
+</resources>

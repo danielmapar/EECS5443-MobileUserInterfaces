@@ -1,0 +1,28 @@
+ca/yorku/cse/mack/softkeyboard/MSD2.java
+ ca.yorku.cse.mack.softkeyboard.MSD2
+ ca.yorku.cse.mack.softkeyboard.MSD2$Alignment
+ ca.yorku.cse.mack.softkeyboard.MSD2$MSDCollection
+ ca.yorku.cse.mack.softkeyboard.MSD2$PlaceHolder
+ ca.yorku.cse.mack.softkeyboard.MSD2$TwoStringCollection
+ ca.yorku.cse.mack.softkeyboard.MSD2$WordCollection
+ca/yorku/cse/mack/softkeyboard/Key.java
+ ca.yorku.cse.mack.softkeyboard.Key
+ca/yorku/cse/mack/softkeyboard/MSD.java
+ ca.yorku.cse.mack.softkeyboard.MSD
+ca/yorku/cse/mack/softkeyboard/KeyboardEvent.java
+ ca.yorku.cse.mack.softkeyboard.KeyboardEvent
+ca/yorku/cse/mack/softkeyboard/KeyPopup.java
+ ca.yorku.cse.mack.softkeyboard.KeyPopup
+ca/yorku/cse/mack/softkeyboard/SoftKeyboardActivity.java
+ ca.yorku.cse.mack.softkeyboard.SoftKeyboardActivity
+ ca.yorku.cse.mack.softkeyboard.SoftKeyboardActivity$1
+ ca.yorku.cse.mack.softkeyboard.SoftKeyboardActivity$Sample
+ca/yorku/cse/mack/softkeyboard/KeyboardPanel.java
+ ca.yorku.cse.mack.softkeyboard.KeyboardPanel
+ ca.yorku.cse.mack.softkeyboard.KeyboardPanel$OnKeystrokeListener
+ca/yorku/cse/mack/softkeyboard/BuildConfig.java
+ ca.yorku.cse.mack.softkeyboard.BuildConfig
+ca/yorku/cse/mack/softkeyboard/SoftKeyboardSetup.java
+ ca.yorku.cse.mack.softkeyboard.SoftKeyboardSetup
+ca/yorku/cse/mack/softkeyboard/StringPair.java
+ ca.yorku.cse.mack.softkeyboard.StringPair

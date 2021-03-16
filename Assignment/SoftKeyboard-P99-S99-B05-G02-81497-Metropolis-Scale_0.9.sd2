@@ -1,0 +1,6 @@
+App,Participant,Session,Block,Group,Condition,Layout,Scale,Keystrokes,Characters,Time(s),Speed(wpm),ErrorRate(%),KSPC
+SoftKeyboard,P99,S99,B05,G02,81497,Metropolis,Scale_0.9,36,34,85.00,4.782782,0.000000,1.058824
+SoftKeyboard,P99,S99,B05,G02,81497,Metropolis,Scale_0.9,27,27,67.00,4.802063,0.000000,1.000000
+SoftKeyboard,P99,S99,B05,G02,81497,Metropolis,Scale_0.9,28,28,65.00,5.168436,0.000000,1.000000
+SoftKeyboard,P99,S99,B05,G02,81497,Metropolis,Scale_0.9,9,9,53.00,2.002893,72.727272,1.000000
+SoftKeyboard,P99,S99,B05,G02,81497,Metropolis,Scale_0.9,30,24,72.00,3.993566,0.000000,1.250000

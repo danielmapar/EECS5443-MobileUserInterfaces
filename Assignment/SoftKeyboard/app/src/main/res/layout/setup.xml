@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- not using this yet -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff123456"
+            android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="#ff234567"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+
+        <!-- Title and Subtitle -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+            <TextView
+                android:id="@+id/setupTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/setup_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+                android:id="@+id/setupSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp"
+                android:text="@string/setup_subtitle"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+        <!-- OK, SAVE, and EXIT Buttons -->
+
+        <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ff234567"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/ok"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+            </Button>
+            <Button
+                android:id="@+id/save"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/save"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+            </Button>
+
+            <Button
+                android:id="@+id/exit"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/exit"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+            </Button>
+        </LinearLayout>
+
+        <!-- BEGIN customizable part of setup -->
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!-- Use the following TableRow as the template for SPINNER setup items -->
+            <TableRow>
+                <TextView
+                    android:gravity="end"
+                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/setupPartcipantCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/spinParticipantCode"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupSessionCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/spinSessionCode"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupBlockCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/spinBlockCode"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupGroupCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/spinGroupCode"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <!-- Use the following TableRow as the template for EDITTEXT setup items -->
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupConditionCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/conditionCode"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="@string/hintText"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupKeyboardLayout"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/keyboardLayout"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+            <TextView
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:text="@string/setupKeyboardScale"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/keyboardScale"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:hint="@string/hintText"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupOffsetFromBottom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/offsetFromBottom"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="@string/hintText"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupNumberOfPhrases"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/numberOfPhrases"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/setupPhrasesFile"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Spinner
+                    android:id="@+id/phrasesFile"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </TableRow>
+
+            <CheckBox
+                android:id="@+id/showPopupKey"
+                android:text="@string/setupShowPopupKey"/>
+            <CheckBox
+                android:id="@+id/lowercaseOnly"
+                android:text="@string/setupLowercaseOnly"/>
+            <CheckBox
+                android:id="@+id/showPresentedText"
+                android:text="@string/setupShowPresentedTextDuringEntry"/>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

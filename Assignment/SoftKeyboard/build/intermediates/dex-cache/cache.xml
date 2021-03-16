@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\mack\Desktop\Scott-new\Java\AndroidStudioStuff\SoftKeyboard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="e52dd81af39bbac4065aee203923594e8a6b731f">
+        <dex dex="C:\Users\mack\Desktop\Scott-new\Java\AndroidStudioStuff\SoftKeyboard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_661d11402d258ca75fd083a53c28d38cd7cf3d28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\mack\Desktop\Scott-new\Java\AndroidStudioStuff\SoftKeyboard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="581cc7cceeaa3dca6a760c735be4855a4f061dd8">
+        <dex dex="C:\Users\mack\Desktop\Scott-new\Java\AndroidStudioStuff\SoftKeyboard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_93aad4f6d71bb69c8612c791e3e476d58cfa761d\classes.dex" />
+    </item>
+
+</items>

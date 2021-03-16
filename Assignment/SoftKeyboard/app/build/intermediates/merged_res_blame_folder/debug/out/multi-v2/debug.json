@@ -1,0 +1,216 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/lewis.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "34",
+                        "endColumns": "12",
+                        "endOffsets": "1177"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "1267",
+                        "endLines": "69",
+                        "endColumns": "12",
+                        "endOffsets": "2354"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/quickbrownfox.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "4",
+                        "endColumns": "9",
+                        "endOffsets": "156"
+                    },
+                    "to": {
+                        "startLines": "776",
+                        "startColumns": "4",
+                        "startOffsets": "32663",
+                        "endLines": "778",
+                        "endColumns": "9",
+                        "endOffsets": "32760"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/fitaly.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "35",
+                        "endColumns": "12",
+                        "endOffsets": "1217"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "135",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "1262"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/metropolis.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "34",
+                        "endColumns": "12",
+                        "endOffsets": "1214"
+                    },
+                    "to": {
+                        "startLines": "70",
+                        "startColumns": "4",
+                        "startOffsets": "2359",
+                        "endLines": "101",
+                        "endColumns": "12",
+                        "endOffsets": "3483"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,14,16,11,15,8,6,7,19,17,9,12,18,10,13,24,26,25,27,28,33,30,29,22,31,23,32,34,5,4,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "56,589,687,437,638,311,221,265,856,744,365,475,803,399,536,1130,1238,1184,1300,1364,1681,1495,1426,1007,1562,1072,1620,1743,152,106,914",
+                        "endColumns": "49,48,56,37,48,53,43,45,57,61,33,60,49,37,52,53,61,53,63,61,61,66,68,64,57,57,60,94,68,45,91",
+                        "endOffsets": "101,633,739,470,682,360,260,306,909,801,394,531,851,432,584,1179,1295,1233,1359,1421,1738,1557,1490,1067,1615,1125,1676,1833,216,147,1001"
+                    },
+                    "to": {
+                        "startLines": "811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "33946,33996,34045,34102,34140,34189,34243,34279,34317,34375,34437,34471,34532,34585,34623,34676,34730,34792,34846,34910,34972,35034,35101,35170,35235,35293,35351,35412,35507,35576,35622",
+                        "endColumns": "49,48,56,37,48,53,35,37,57,61,33,60,52,37,52,53,61,53,63,61,61,66,68,64,57,57,60,94,68,45,91",
+                        "endOffsets": "33991,34040,34097,34135,34184,34238,34274,34312,34370,34432,34466,34527,34580,34618,34671,34725,34787,34841,34905,34967,35029,35096,35165,35230,35288,35346,35407,35502,35571,35617,35709"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/opti.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "1296"
+                    },
+                    "to": {
+                        "startLines": "102",
+                        "startColumns": "4",
+                        "startOffsets": "3488",
+                        "endLines": "136",
+                        "endColumns": "12",
+                        "endOffsets": "4691"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/phrases2.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "503",
+                        "endColumns": "12",
+                        "endOffsets": "22901"
+                    },
+                    "to": {
+                        "startLines": "274",
+                        "startColumns": "4",
+                        "startOffsets": "10315",
+                        "endLines": "775",
+                        "endColumns": "12",
+                        "endOffsets": "32658"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/opti2.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "1297"
+                    },
+                    "to": {
+                        "startLines": "137",
+                        "startColumns": "4",
+                        "startOffsets": "4696",
+                        "endLines": "171",
+                        "endColumns": "12",
+                        "endOffsets": "5900"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/alphabet.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "4",
+                        "endColumns": "9",
+                        "endOffsets": "134"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "9",
+                        "endOffsets": "130"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/phrases100.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "54",
+                        "endLines": "103",
+                        "endColumns": "9",
+                        "endOffsets": "4560"
+                    },
+                    "to": {
+                        "startLines": "172",
+                        "startColumns": "4",
+                        "startOffsets": "5905",
+                        "endLines": "273",
+                        "endColumns": "9",
+                        "endOffsets": "10310"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/values/qwerty.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "34",
+                        "endColumns": "12",
+                        "endOffsets": "1266"
+                    },
+                    "to": {
+                        "startLines": "779",
+                        "startColumns": "4",
+                        "startOffsets": "32765",
+                        "endLines": "810",
+                        "endColumns": "12",
+                        "endOffsets": "33941"
+                    }
+                }
+            ]
+        }
+    ]
+}

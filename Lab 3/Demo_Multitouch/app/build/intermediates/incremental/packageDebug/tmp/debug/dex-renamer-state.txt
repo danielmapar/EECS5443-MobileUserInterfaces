@@ -1,0 +1,4 @@
+#Fri Feb 26 02:19:02 EST 2021
+base.0=/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Multitouch/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,4 @@
+#Wed Mar 03 00:37:21 EST 2021
+base.0=/Users/daniel/Desktop/workspace/4443/Lab 3/Demo_Scale_81497/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

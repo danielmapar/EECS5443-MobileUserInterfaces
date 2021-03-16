@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="lewis">
+        <item>60, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>R, 1, 0, 1, 1</item>
+        <item>W, 2, 0, 1, 1</item>
+        <item>X, 3, 0, 1, 1</item>
+        <item>Y, 4, 0, 1, 1</item>
+        <item>Bksp, 5, 0, 1, 1</item>
+        <item>L, 0, 1, 1, 1</item>
+        <item>U, 1, 1, 1, 1</item>
+        <item>A, 2, 1, 1, 1</item>
+        <item>O, 3, 1, 1, 1</item>
+        <item>F, 4, 1, 1, 1</item>
+        <item>T, 0, 2, 1, 1</item>
+        <item>H, 1, 2, 1, 1</item>
+        <item>E, 2, 2, 1, 1</item>
+        <item>N, 3, 2, 1, 1</item>
+        <item>G, 4, 2, 1, 1</item>
+        <item>Enter, 5, 2, 1, 1</item>
+        <item>V, 0, 3, 1, 1</item>
+        <item>D, 1, 3, 1, 1</item>
+        <item>I, 2, 3, 1, 1</item>
+        <item>S, 3, 3, 1, 1</item>
+        <item>P, 4, 3, 1, 1</item>
+        <item>B, 0, 4, 1, 1</item>
+        <item>C, 1, 4, 1, 1</item>
+        <item>M, 2, 4, 1, 1</item>
+        <item>J, 3, 4, 1, 1</item>
+        <item>K, 4, 4, 1, 1</item>
+        <item>Z, 5, 4, 1, 1</item>
+        <item>Space, 0, 5, 6, 1</item>
+    </array>
+
+</resources>

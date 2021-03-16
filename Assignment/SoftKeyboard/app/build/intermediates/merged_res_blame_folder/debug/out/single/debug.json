@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/raw_undo.wav.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/raw/undo.wav"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/raw_type.wav.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/raw/type.wav"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/layout_results_dialog.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/layout/results_dialog.xml"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/layout_setup.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/layout/setup.xml"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/raw_miss.wav.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/raw/miss.wav"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/build/intermediates/res/merged/debug/layout_spinnerstyle.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/SoftKeyboard/app/src/main/res/layout/spinnerstyle.xml"
+    }
+]

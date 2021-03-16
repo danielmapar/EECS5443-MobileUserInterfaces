@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="qwerty">
+        <item>36, 40</item>
+        <item>Q, 0, 0, 1, 1</item>
+        <item>W, 1, 0, 1, 1</item>
+        <item>E, 2, 0, 1, 1</item>
+        <item>R, 3, 0, 1, 1</item>
+        <item>T, 4, 0, 1, 1</item>
+        <item>Y, 5, 0, 1, 1</item>
+        <item>U, 6, 0, 1, 1</item>
+        <item>I, 7, 0, 1, 1</item>
+        <item>O, 8, 0, 1, 1</item>
+        <item>P, 9, 0, 1, 1</item>
+        <item>A, 0.3333, 1, 1, 1</item>
+        <item>S, 1.3333, 1, 1, 1</item>
+        <item>D, 2.3333, 1, 1, 1</item>
+        <item>F, 3.3333, 1, 1, 1</item>
+        <item>G, 4.3333, 1, 1, 1</item>
+        <item>H, 5.3333, 1, 1, 1</item>
+        <item>J, 6.3333, 1, 1, 1</item>
+        <item>K, 7.3333, 1, 1, 1</item>
+        <item>L, 8.3333, 1, 1, 1</item>
+        <item>Z, 0.6666, 2, 1, 1</item>
+        <item>X, 1.6666, 2, 1, 1</item>
+        <item>C, 2.6666, 2, 1, 1</item>
+        <item>V, 3.6666, 2, 1, 1</item>
+        <item>B, 4.6666, 2, 1, 1</item>
+        <item>N, 5.6666, 2, 1, 1</item>
+        <item>M, 6.6666, 2, 1, 1</item>
+        <item>Space, 2, 3, 6, 1</item>
+        <item>Enter, 8, 3, 2, 1</item>
+        <item>Bksp, 7.666, 2, 2.333, 1</item>
+    </array>
+
+</resources>
