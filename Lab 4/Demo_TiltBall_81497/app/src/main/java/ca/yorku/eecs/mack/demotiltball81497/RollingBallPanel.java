@@ -281,9 +281,15 @@ public class RollingBallPanel extends View
 
     protected void onDraw(Canvas canvas)
     {
+
         // draw the paths
         if (pathType == PATH_TYPE_SQUARE)
         {
+            float   lapLineX = outerRectangle.left,
+                    lapLineY = innerRectangle.top,
+                    lapLineX1 = innerRectangle.left,
+                    lapLineY1 = lapLineY;
+
             // draw fills
             canvas.drawRect(outerRectangle, fillPaint);
             canvas.drawRect(innerRectangle, backgroundPaint);
@@ -291,9 +297,15 @@ public class RollingBallPanel extends View
             // draw lines
             canvas.drawRect(outerRectangle, linePaint);
             canvas.drawRect(innerRectangle, linePaint);
-            canvas.drawLine(outerRectangle.left, innerRectangle.top, innerRectangle.left, innerRectangle.top, linePaint);
-        } else if (pathType == PATH_TYPE_CIRCLE)
-        {
+
+            canvas.drawLine(lapLineX, lapLineY, lapLineX1, lapLineY1, linePaint);
+
+        } else if (pathType == PATH_TYPE_CIRCLE) {
+            float   lapLineX = innerRectangle.left,
+                    lapLineY = innerRectangle.top+(innerRectangle.bottom-innerRectangle.top)/2,
+                    lapLineX1 = outerRectangle.left,
+                    lapLineY1 = lapLineY;
+
             // draw fills
             canvas.drawOval(outerRectangle, fillPaint);
             canvas.drawOval(innerRectangle, backgroundPaint);
@@ -301,7 +313,10 @@ public class RollingBallPanel extends View
             // draw lines
             canvas.drawOval(outerRectangle, linePaint);
             canvas.drawOval(innerRectangle, linePaint);
+
+            canvas.drawLine(lapLineX, lapLineY, lapLineX1, lapLineY1, linePaint);
         }
+
 
         // draw label
         canvas.drawText("Demo_TiltBall", 6f, labelTextSize, labelPaint);
