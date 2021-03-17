@@ -6,9 +6,11 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.graphics.RectF;
 import android.os.Vibrator;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import java.util.Locale;
@@ -42,6 +44,8 @@ public class RollingBallPanel extends View
 
     float width, height, pixelDensity;
     int labelTextSize, statsTextSize, gap, offset;
+
+    float arrowXStart, arrowYStart;
 
     RectF innerRectangle, outerRectangle, innerShadowRectangle, outerShadowRectangle, ballNow;
     boolean touchFlag;
@@ -149,6 +153,9 @@ public class RollingBallPanel extends View
         // center of the view
         xCenter = width / 2f;
         yCenter = height / 2f;
+
+        arrowXStart = xCenter;
+        arrowYStart = yCenter;
 
         // top-left corner of the ball
         xBall = xCenter;
@@ -282,14 +289,14 @@ public class RollingBallPanel extends View
     protected void onDraw(Canvas canvas)
     {
 
+        float   lapLineX = innerRectangle.left,
+                lapLineY = innerRectangle.top+(innerRectangle.bottom-innerRectangle.top)/2,
+                lapLineX1 = outerRectangle.left,
+                lapLineY1 = lapLineY;
+
         // draw the paths
         if (pathType == PATH_TYPE_SQUARE)
         {
-            float   lapLineX = outerRectangle.left,
-                    lapLineY = innerRectangle.top,
-                    lapLineX1 = innerRectangle.left,
-                    lapLineY1 = lapLineY;
-
             // draw fills
             canvas.drawRect(outerRectangle, fillPaint);
             canvas.drawRect(innerRectangle, backgroundPaint);
@@ -301,11 +308,6 @@ public class RollingBallPanel extends View
             canvas.drawLine(lapLineX, lapLineY, lapLineX1, lapLineY1, linePaint);
 
         } else if (pathType == PATH_TYPE_CIRCLE) {
-            float   lapLineX = innerRectangle.left,
-                    lapLineY = innerRectangle.top+(innerRectangle.bottom-innerRectangle.top)/2,
-                    lapLineX1 = outerRectangle.left,
-                    lapLineY1 = lapLineY;
-
             // draw fills
             canvas.drawOval(outerRectangle, fillPaint);
             canvas.drawOval(innerRectangle, backgroundPaint);
@@ -316,6 +318,16 @@ public class RollingBallPanel extends View
 
             canvas.drawLine(lapLineX, lapLineY, lapLineX1, lapLineY1, linePaint);
         }
+        float toXArrow = (float)Math.sin(tiltAngle * DEGREES_TO_RADIANS) * dBall;
+        float toYArrow = -(float)Math.cos(tiltAngle * DEGREES_TO_RADIANS) * dBall;
+
+        Log.i("OII-toXArrow", String.valueOf(toXArrow));
+        Log.i("OII-toYArrow", String.valueOf(toYArrow));
+        Log.i("OII-arrowXStart", String.valueOf(arrowXStart));
+        Log.i("OII-arrowYStart", String.valueOf(arrowYStart));
+        Log.d("OII", "---------");
+
+        this.drawArrow(linePaint, canvas,arrowXStart, arrowYStart, arrowXStart+toXArrow, arrowYStart+toYArrow);
 
 
         // draw label
@@ -338,6 +350,41 @@ public class RollingBallPanel extends View
         canvas.drawBitmap(ball, xBall, yBall, null);
 
     } // end onDraw
+
+    private float normalizeValue(float val, float max, float min) {
+
+        if (val >= max) return max;
+        if (val <= min) return min;
+        return val;
+    }
+
+    private void drawArrow(Paint paint, Canvas canvas, float from_x, float from_y, float to_x, float to_y)
+    {
+        float angle,anglerad, radius, lineangle;
+
+        //values to change for other appearance *CHANGE THESE FOR OTHER SIZE ARROWHEADS*
+        radius=30f;
+        angle=35f;
+
+        //some angle calculations
+        anglerad= (float) (Math.PI*angle/180.0f);
+        lineangle= (float) (Math.atan2(to_y-from_y,to_x-from_x));
+
+        //tha line
+        canvas.drawLine(from_x,from_y,to_x,to_y,paint);
+
+        //tha triangle
+        Path path = new Path();
+        path.setFillType(Path.FillType.EVEN_ODD);
+        path.moveTo(to_x, to_y);
+        path.lineTo((float)(to_x-radius*Math.cos(lineangle - (anglerad / 2.0))),
+                (float)(to_y-radius*Math.sin(lineangle - (anglerad / 2.0))));
+        path.lineTo((float)(to_x-radius*Math.cos(lineangle + (anglerad / 2.0))),
+                (float)(to_y-radius*Math.sin(lineangle + (anglerad / 2.0))));
+        path.close();
+
+        canvas.drawPath(path, paint);
+    }
 
     /*
      * Configure the rolling ball panel according to setup parameters

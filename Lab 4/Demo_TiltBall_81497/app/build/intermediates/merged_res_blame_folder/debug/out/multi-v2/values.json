@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Daniel\\Desktop\\workspace\\EECS5443-MobileUserInterfaces\\Lab 4\\Demo_TiltBall_81497\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Daniel\\Desktop\\workspace\\EECS5443-MobileUserInterfaces\\Lab 4\\Demo_TiltBall_81497\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Daniel\\Desktop\\workspace\\EECS5443-MobileUserInterfaces\\Lab 4\\Demo_TiltBall_81497\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "3,10,11,6,8,5,9,7,4",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "112,163,207,253,305,375,449,510,573",
                         "endColumns": "50,43,45,51,69,73,60,62,64",
                         "endOffsets": "158,202,248,300,370,444,505,568,633"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
                     }
                 }
             ]
