@@ -16,7 +16,7 @@
 12    </uses-permission>
 13
 14    <application
-14-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:10:5-29:19
+14-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:10:5-34:19
 15        android:allowBackup="false"
 15-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:11:9-36
 16        android:debuggable="true"
@@ -56,6 +56,15 @@
 34            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
 34-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:27:13-71
 35        </activity>
-36    </application>
-37
-38</manifest>
+36        <activity
+36-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:29:9-33:20
+37            android:name="ca.yorku.eecs.mack.demotiltball81497.ReportActivity"
+37-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:30:13-79
+38            android:label="@string/app_name"
+38-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:31:13-45
+39            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+39-->/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:32:13-71
+40        </activity>
+41    </application>
+42
+43</manifest>

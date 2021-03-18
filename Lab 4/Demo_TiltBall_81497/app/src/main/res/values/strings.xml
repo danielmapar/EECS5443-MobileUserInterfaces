@@ -11,4 +11,12 @@
     <string name="button01text">OK</string>
     <string name="button03text">Exit</string>
 
+    <string name="reporttitletext">Results</string>
+    <string name="reportlaps">Laps = </string>
+    <string name="reportlaptime">Lap time = </string>
+    <string name="reportwallhits">Wall hits = </string>
+    <string name="reportinpathtime">In-path time = </string>
+    <string name="reportbuttonsetup">Setup</string>
+    <string name="reportbuttonexit">Exit</string>
+
 </resources>

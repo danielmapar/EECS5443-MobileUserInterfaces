@@ -44,6 +44,10 @@
         "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/res/merged/debug/layout_report.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/layout/report.xml"
+    },
+    {
         "merged": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
         "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/drawable-mdpi/icon.png"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/res/merged/debug/raw_success.wav.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/raw/success.wav"
     },
     {
         "merged": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",

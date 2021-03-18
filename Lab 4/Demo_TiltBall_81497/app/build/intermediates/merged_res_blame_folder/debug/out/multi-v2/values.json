@@ -6,35 +6,48 @@
                 {
                     "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "3,10,11,6,8,5,9,7,4",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,492,536,246,361,172,431,298,107",
-                        "endColumns": "50,43,45,51,69,73,60,62,64",
-                        "endOffsets": "102,531,577,293,426,241,487,356,167"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,17,14,15,-1,16,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,4,4,4,-1,4,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,792,635,682,-1,736,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,60,46,53,-1,55,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,848,677,731,-1,787,-1"
                     },
                     "to": {
-                        "startLines": "3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "112,163,207,253,305,375,449,510,573",
-                        "endColumns": "50,43,45,51,69,73,60,62,64",
-                        "endOffsets": "158,202,248,300,370,444,505,568,633"
+                        "startLines": "5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "189,240,284,330,382,452,526,587,650,700,752,813,860,914,966,1022",
+                        "endColumns": "50,43,45,51,69,73,60,62,49,51,60,46,53,51,55,64",
+                        "endOffsets": "235,279,325,377,447,521,582,645,695,747,808,855,909,961,1017,1082"
+                    }
+                },
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,151",
+                        "endColumns": "38,37",
+                        "endOffsets": "89,184"
                     }
                 },
                 {
                     "source": "/Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/res/values/ic_launcher_background.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
-                        "startLines": "2",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "55",
+                        "startOffsets": "94",
                         "endColumns": "56",
-                        "endOffsets": "107"
+                        "endOffsets": "146"
                     }
                 }
             ]

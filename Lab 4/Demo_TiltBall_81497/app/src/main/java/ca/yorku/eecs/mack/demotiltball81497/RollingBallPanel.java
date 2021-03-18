@@ -1,6 +1,9 @@
 package ca.yorku.eecs.mack.demotiltball81497;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -8,15 +11,21 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class RollingBallPanel extends View
 {
+    static MediaPlayer mp = null;
+
     final static float DEGREES_TO_RADIANS = 0.0174532925f;
 
     // the ball diameter will be min(width, height) / this_value
@@ -47,8 +56,8 @@ public class RollingBallPanel extends View
 
     float arrowXStart, arrowYStart;
 
-    RectF innerRectangle, outerRectangle, innerShadowRectangle, outerShadowRectangle, ballNow;
-    boolean touchFlag;
+    RectF innerRectangle, outerRectangle, innerShadowRectangle, outerShadowRectangle, lapLineRectangle, ballNow;
+    boolean touchFlag, touchLapLineFlag;
     Vibrator vib;
     int wallHits;
 
@@ -60,8 +69,8 @@ public class RollingBallPanel extends View
 
     // parameters from Setup dialog
     String orderOfControl;
-    float gain, pathWidth, numberOfLaps;
-    int pathType;
+    float gain, pathWidth;
+    int pathType, currentLap, numberOfLaps;
 
     float velocity; // in pixels/second (velocity = tiltMagnitude * tiltVelocityGain
     float dBall; // the amount to move the ball (in pixels): dBall = dT * velocity
@@ -69,6 +78,16 @@ public class RollingBallPanel extends View
     long now, lastT;
     Paint statsPaint, labelPaint, linePaint, fillPaint, backgroundPaint;
     float[] updateY;
+
+    long lapStartTime = 0;
+    float[] lapTimes;
+    boolean isBallInsidePath;
+    double outsideOfPathStartTime = -1;
+    double totalTimeOutsidePath = 0;
+    double experimentStartTime = -1;
+
+
+    Activity activity;
 
     public RollingBallPanel(Context contextArg)
     {
@@ -91,6 +110,8 @@ public class RollingBallPanel extends View
     // things that can be initialized from within this View
     private void initialize(Context c)
     {
+        isBallInsidePath = isBallInPath();
+
         linePaint = new Paint();
         linePaint.setColor(Color.RED);
         linePaint.setStyle(Paint.Style.STROKE);
@@ -120,12 +141,15 @@ public class RollingBallPanel extends View
         lastT = System.nanoTime();
         this.setBackgroundColor(Color.LTGRAY);
         touchFlag = false;
+        touchLapLineFlag = false;
         outerRectangle = new RectF();
         innerRectangle = new RectF();
         innerShadowRectangle = new RectF();
         outerShadowRectangle = new RectF();
+        lapLineRectangle = new RectF();
         ballNow = new RectF();
         wallHits = 0;
+        currentLap = 0;
 
         vib = (Vibrator)c.getSystemService(Context.VIBRATOR_SERVICE);
     }
@@ -205,7 +229,7 @@ public class RollingBallPanel extends View
         offset = (int)(DEFAULT_OFFSET * pixelDensity + 0.5f);
 
         // compute y offsets for painting stats (bottom-left of display)
-        updateY = new float[7]; // up to 7 lines of stats will appear
+        updateY = new float[8]; // up to 8 lines of stats will appear
         for (int i = 0; i < updateY.length; ++i)
             updateY[i] = height - offset - i * (statsTextSize + gap);
     }
@@ -216,6 +240,7 @@ public class RollingBallPanel extends View
      */
     public void updateBallPosition(float pitchArg, float rollArg, float tiltAngleArg, float tiltMagnitudeArg)
     {
+        isBallInsidePath = isBallInPath();
         pitch = pitchArg; // for information only (see onDraw)
         roll = rollArg; // for information only (see onDraw)
         tiltAngle = tiltAngleArg;
@@ -272,27 +297,65 @@ public class RollingBallPanel extends View
         xBallCenter = xBall + ballDiameter / 2f;
         yBallCenter = yBall + ballDiameter / 2f;
 
+        if (isBallInsidePath) {
+            if (outsideOfPathStartTime > 0) totalTimeOutsidePath += System.nanoTime() - outsideOfPathStartTime;
+            outsideOfPathStartTime = -1;
+            linePaint.setColor(Color.BLUE);
+            fillPaint.setColor(0xFFADD8E6);
+        } else {
+            if (experimentStartTime > 0 && outsideOfPathStartTime < 0) outsideOfPathStartTime = System.nanoTime();
+            linePaint.setColor(Color.RED);
+            fillPaint.setColor(0xffccbbbb);
+        }
+
+        if (ballTouchingLapLine() && !touchLapLineFlag) {
+            touchLapLineFlag = true;
+
+            if (currentLap == 0) {
+                experimentStartTime = System.nanoTime();
+                lapStartTime = System.currentTimeMillis();
+                currentLap++;
+            }
+            else {
+                lapTimes[currentLap-1] =  System.currentTimeMillis() - lapStartTime;
+                lapStartTime = System.currentTimeMillis();
+                if (currentLap+1 > numberOfLaps) loadReportView();
+                else currentLap++;
+            }
+            mp.start();
+        } else if (!ballTouchingLapLine() && touchLapLineFlag) {
+            touchLapLineFlag = false;
+        }
+
         // if ball touches wall, vibrate and increment wallHits count
         // NOTE: We also use a boolean touchFlag so we only vibrate on the first touch
         if (ballTouchingLine() && !touchFlag)
         {
             touchFlag = true; // the ball has *just* touched the line: set the touchFlag
-            vib.vibrate(50); // 50 ms vibrotactile pulse
-            ++wallHits;
 
-        } else if (!ballTouchingLine() && touchFlag)
+            if (isBallInsidePath) {
+                vib.vibrate(50); // 50 ms vibrotactile pulse
+                ++wallHits;
+            }
+
+        } else if (!ballTouchingLine() && touchFlag) {
             touchFlag = false; // the ball is no longer touching the line: clear the touchFlag
+        }
 
         invalidate(); // force onDraw to redraw the screen with the ball in its new position
     }
 
     protected void onDraw(Canvas canvas)
     {
-
         float   lapLineX = innerRectangle.left,
                 lapLineY = innerRectangle.top+(innerRectangle.bottom-innerRectangle.top)/2,
                 lapLineX1 = outerRectangle.left,
                 lapLineY1 = lapLineY;
+
+        lapLineRectangle.left = lapLineX1;
+        lapLineRectangle.top = lapLineY;
+        lapLineRectangle.right = lapLineX;
+        lapLineRectangle.bottom = lapLineY1;
 
         // draw the paths
         if (pathType == PATH_TYPE_SQUARE)
@@ -318,17 +381,11 @@ public class RollingBallPanel extends View
 
             canvas.drawLine(lapLineX, lapLineY, lapLineX1, lapLineY1, linePaint);
         }
-        float toXArrow = (float)Math.sin(tiltAngle * DEGREES_TO_RADIANS) * dBall;
-        float toYArrow = -(float)Math.cos(tiltAngle * DEGREES_TO_RADIANS) * dBall;
+        float toXArrow = (float)Math.sin(tiltAngle * DEGREES_TO_RADIANS);
+        float toYArrow = -(float)Math.cos(tiltAngle * DEGREES_TO_RADIANS);
+        float arrowLength = 100;
 
-        Log.i("OII-toXArrow", String.valueOf(toXArrow));
-        Log.i("OII-toYArrow", String.valueOf(toYArrow));
-        Log.i("OII-arrowXStart", String.valueOf(arrowXStart));
-        Log.i("OII-arrowYStart", String.valueOf(arrowYStart));
-        Log.d("OII", "---------");
-
-        this.drawArrow(linePaint, canvas,arrowXStart, arrowYStart, arrowXStart+toXArrow, arrowYStart+toYArrow);
-
+        this.drawArrow(linePaint, canvas,arrowXStart, arrowYStart, arrowXStart+toXArrow * arrowLength, arrowYStart+toYArrow * arrowLength);
 
         // draw label
         canvas.drawText("Demo_TiltBall", 6f, labelTextSize, labelPaint);
@@ -336,8 +393,9 @@ public class RollingBallPanel extends View
         // draw stats (pitch, roll, tilt angle, tilt magnitude)
         if (pathType == PATH_TYPE_SQUARE || pathType == PATH_TYPE_CIRCLE)
         {
-            canvas.drawText("Wall hits = " + wallHits, 6f, updateY[6], statsPaint);
-            canvas.drawText("Number of laps = " + String.valueOf((int) numberOfLaps), 6f, updateY[5], statsPaint);
+            canvas.drawText("Wall hits = " + wallHits, 6f, updateY[7], statsPaint);
+            canvas.drawText("Number of laps = " + String.valueOf(currentLap) + "/" + String.valueOf(numberOfLaps), 6f, updateY[6], statsPaint);
+            canvas.drawText("Lap time (s) = " + String.valueOf((lapStartTime == 0 ? lapStartTime : System.currentTimeMillis()-lapStartTime)/1000), 6f, updateY[5], statsPaint);
             canvas.drawText("-----------------", 6f, updateY[4], statsPaint);
         }
         canvas.drawText(String.format(Locale.CANADA, "Tablet pitch (degrees) = %.2f", pitch), 6f, updateY[3],
@@ -350,13 +408,6 @@ public class RollingBallPanel extends View
         canvas.drawBitmap(ball, xBall, yBall, null);
 
     } // end onDraw
-
-    private float normalizeValue(float val, float max, float min) {
-
-        if (val >= max) return max;
-        if (val <= min) return min;
-        return val;
-    }
 
     private void drawArrow(Paint paint, Canvas canvas, float from_x, float from_y, float to_x, float to_y)
     {
@@ -389,8 +440,11 @@ public class RollingBallPanel extends View
     /*
      * Configure the rolling ball panel according to setup parameters
      */
-    public void configure(String pathMode, String pathWidthArg, int gainArg, String orderOfControlArg, int numberOfLapsArg)
+    public void configure(String pathMode, String pathWidthArg, int gainArg, String orderOfControlArg, int numberOfLapsArg, MediaPlayer mediaPlayer, Activity parent)
     {
+        activity = parent;
+        mp = mediaPlayer;
+
         // square vs. circle
         if (pathMode.equals("Square"))
             pathType = PATH_TYPE_SQUARE;
@@ -409,6 +463,8 @@ public class RollingBallPanel extends View
 
         gain = gainArg;
         numberOfLaps = numberOfLapsArg;
+        lapTimes = new float[numberOfLaps];
+        currentLap = 0;
         orderOfControl = orderOfControlArg;
     }
 
@@ -440,5 +496,86 @@ public class RollingBallPanel extends View
                 return true; // touching inner circular border
         }
         return false;
+    }
+
+    public boolean ballTouchingLapLine()
+    {
+        ballNow.left = xBall;
+        ballNow.top = yBall;
+        ballNow.right = xBall + ballDiameter;
+        ballNow.bottom = yBall + ballDiameter;
+
+        float toYArrow = -(float)Math.cos(tiltAngle * DEGREES_TO_RADIANS);
+
+        return toYArrow > 0 && RectF.intersects(ballNow, lapLineRectangle);
+    }
+
+    public boolean isBallInPath()
+    {
+        if (pathType == PATH_TYPE_SQUARE)
+        {
+            ballNow.left = xBall;
+            ballNow.top = yBall;
+            ballNow.right = xBall + ballDiameter;
+            ballNow.bottom = yBall + ballDiameter;
+
+            if( RectF.intersects(ballNow, innerRectangle))
+                return false;
+            if( RectF.intersects(ballNow, outerRectangle))
+                return true;
+            return false;
+
+        } else if (pathType == PATH_TYPE_CIRCLE)
+        {
+            final float ballDistance = (float)Math.sqrt((xBallCenter - xCenter) * (xBallCenter - xCenter)
+                    + (yBallCenter - yCenter) * (yBallCenter - yCenter));
+
+            if (ballDistance > radiusInner && ballDistance<radiusOuter) return true;
+            return false;
+        }
+        return false;
+    }
+
+    public void loadReportView() {
+
+        float totalLapTimes = 0;
+        for (int i = 0; i < lapTimes.length; i++) {
+            totalLapTimes += lapTimes[i];
+        }
+
+        totalLapTimes = totalLapTimes / lapTimes.length / 1000;
+
+        double now = System.nanoTime();
+        double totalExperimentTime = now - experimentStartTime;
+
+
+        Log.i("TEST-totalExperimentTi", String.valueOf(totalExperimentTime));
+        Log.i("TEST-totalTimeOutside", String.valueOf(totalTimeOutsidePath));
+
+        double inPathTime = totalExperimentTime - totalTimeOutsidePath;
+
+        Log.i("TEST-inPathTime", String.valueOf(inPathTime));
+
+
+        double percentageInPathMovementTime = (inPathTime*100)/totalExperimentTime;
+
+        Log.i("TEST-percentageInPat", String.valueOf(percentageInPathMovementTime));
+
+
+
+        // bundle up parameters to pass on to activity
+        Bundle b = new Bundle();
+        b.putInt("numberOfLaps", numberOfLaps);
+        b.putFloat("lapTime", totalLapTimes);
+        b.putInt("numberOfWallsHit", wallHits);
+        b.putFloat("percentageInPathMovementTime", (float) percentageInPathMovementTime);
+
+        // start experiment activity
+        Intent i = new Intent(getContext(), ReportActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        i.putExtras(b);
+        getContext().startActivity(i);
+
+        activity.finish();
     }
 }

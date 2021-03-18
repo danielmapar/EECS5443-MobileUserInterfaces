@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/sr
 	android:name
 		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:7:22-63
 application
-ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:10:5-29:19
+ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:10:5-34:19
 	android:label
 		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:13:9-41
 	android:icon
@@ -63,6 +63,14 @@ ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/sr
 		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:27:13-71
 	android:name
 		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:25:13-90
+activity#ca.yorku.eecs.mack.demotiltball81497.ReportActivity
+ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:29:9-33:20
+	android:label
+		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:31:13-45
+	android:theme
+		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:32:13-71
+	android:name
+		ADDED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml:30:13-79
 uses-sdk
 INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/daniel/Desktop/workspace/4443/Lab 4/Demo_TiltBall_81497/app/src/main/AndroidManifest.xml

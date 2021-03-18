@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -70,6 +71,8 @@ public class DemoTiltBall81497Activity extends Activity implements SensorEventLi
     {
         super.onCreate(savedInstanceState);
 
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.success);
+
         Log.i(MYDEBUG, "Got here! (DemoTiltBall81497Activity - onCreate");
         
         setContentView(R.layout.main);
@@ -100,7 +103,7 @@ public class DemoTiltBall81497Activity extends Activity implements SensorEventLi
 
         // configure rolling ball panel, as per setup parameters
         rb = (RollingBallPanel)findViewById(R.id.rollingballpanel);
-        rb.configure(pathType, pathWidth, gain, orderOfControl, numberOfLaps);
+        rb.configure(pathType, pathWidth, gain, orderOfControl, numberOfLaps, mp, this);
 
         // get sensors
         sm = (SensorManager)getSystemService(SENSOR_SERVICE);

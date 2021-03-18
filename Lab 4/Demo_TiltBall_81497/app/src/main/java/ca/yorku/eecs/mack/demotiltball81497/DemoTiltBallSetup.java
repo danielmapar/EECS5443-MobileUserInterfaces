@@ -87,11 +87,12 @@ public class DemoTiltBallSetup extends Activity
 
 		// start experiment activity
 		Intent i = new Intent(getApplicationContext(), DemoTiltBall81497Activity.class);
+		i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		i.putExtras(b);
 		startActivity(i);
 
 		// comment out (return to setup after clicking BACK in main activity
-		//finish();
+		finish();
 	}
 
 	/** Called when the "Exit" button is pressed. */
