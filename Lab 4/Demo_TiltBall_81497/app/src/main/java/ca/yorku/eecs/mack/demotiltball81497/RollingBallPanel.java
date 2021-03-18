@@ -548,20 +548,9 @@ public class RollingBallPanel extends View
         double now = System.nanoTime();
         double totalExperimentTime = now - experimentStartTime;
 
-
-        Log.i("TEST-totalExperimentTi", String.valueOf(totalExperimentTime));
-        Log.i("TEST-totalTimeOutside", String.valueOf(totalTimeOutsidePath));
-
         double inPathTime = totalExperimentTime - totalTimeOutsidePath;
 
-        Log.i("TEST-inPathTime", String.valueOf(inPathTime));
-
-
         double percentageInPathMovementTime = (inPathTime*100)/totalExperimentTime;
-
-        Log.i("TEST-percentageInPat", String.valueOf(percentageInPathMovementTime));
-
-
 
         // bundle up parameters to pass on to activity
         Bundle b = new Bundle();
