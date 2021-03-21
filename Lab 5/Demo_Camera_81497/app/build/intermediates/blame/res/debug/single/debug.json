@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/layout_listviewlayout.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/layout/listviewlayout.xml"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/layout_videofullscreen.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/layout/videofullscreen.xml"
+    },
+    {
+        "merged": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/layout/main.xml"
+    }
+]

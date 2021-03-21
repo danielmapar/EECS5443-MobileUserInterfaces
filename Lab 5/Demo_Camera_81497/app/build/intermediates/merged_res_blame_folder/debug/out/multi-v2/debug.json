@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/Desktop/workspace/4443/Lab 5/Demo_Camera_81497/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,-1,-1,-1,-1,-1,3,-1,-1,-1,-1",
+                        "startColumns": "4,-1,-1,-1,-1,-1,4,-1,-1,-1,-1",
+                        "startOffsets": "112,-1,-1,-1,-1,-1,59,-1,-1,-1,-1",
+                        "endColumns": "54,-1,-1,-1,-1,-1,51,-1,-1,-1,-1",
+                        "endOffsets": "162,-1,-1,-1,-1,-1,106,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,110,160,206,259,312,363,415,474,534,593",
+                        "endColumns": "54,49,45,52,52,50,51,58,59,58,59",
+                        "endOffsets": "105,155,201,254,307,358,410,469,529,588,648"
+                    }
+                }
+            ]
+        }
+    ]
+}
