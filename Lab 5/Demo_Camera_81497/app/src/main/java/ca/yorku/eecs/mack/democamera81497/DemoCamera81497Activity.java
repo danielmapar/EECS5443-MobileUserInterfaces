@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,8 +54,8 @@ public class DemoCamera81497Activity extends Activity implements OnClickListener
     private static final int VIDEO_VIEWER_MODE = 400;
 
     Uri fileUri;
-    Button imageCameraButton, videoCameraButton;
-    Button imagePrevButton, imageNextButton, videoPrevButton, videoNextButton;
+    ImageButton imageCameraButton, videoCameraButton;
+    ImageButton imagePrevButton, imageNextButton, videoPrevButton, videoNextButton;
     ImageView imageView;
     VideoView videoView;
     File mediaStorageDirectory;
@@ -93,6 +94,12 @@ public class DemoCamera81497Activity extends Activity implements OnClickListener
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        // initialize();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         initialize();
     }
 
@@ -103,14 +110,14 @@ public class DemoCamera81497Activity extends Activity implements OnClickListener
             getActionBar().hide();
 
         // get references to UI widgets
-        imageCameraButton = (Button)findViewById(R.id.button1);
-        videoCameraButton = (Button)findViewById(R.id.button2);
+        imageCameraButton = (ImageButton)findViewById(R.id.button1);
+        videoCameraButton = (ImageButton) findViewById(R.id.button2);
         imageView = (ImageView)findViewById(R.id.imageView1);
         videoView = (VideoView)findViewById(R.id.videoView1);
-        imagePrevButton = (Button)findViewById(R.id.button1a);
-        imageNextButton = (Button)findViewById(R.id.button1b);
-        videoPrevButton = (Button)findViewById(R.id.button2a);
-        videoNextButton = (Button)findViewById(R.id.button2b);
+        imagePrevButton = (ImageButton)findViewById(R.id.button1a);
+        imageNextButton = (ImageButton)findViewById(R.id.button1b);
+        videoPrevButton = (ImageButton)findViewById(R.id.button2a);
+        videoNextButton = (ImageButton)findViewById(R.id.button2b);
         imageCountView = (TextView)findViewById(R.id.imageCount);
         videoCountView = (TextView)findViewById(R.id.videoCount);
         statusTextView = (TextView)findViewById(R.id.indexandcount);
@@ -118,6 +125,7 @@ public class DemoCamera81497Activity extends Activity implements OnClickListener
         // attach listeners to UI widgets
         imageView.setOnTouchListener(this);
         videoView.setOnTouchListener(this);
+
         imageCameraButton.setOnClickListener(this);
         videoCameraButton.setOnClickListener(this);
         imagePrevButton.setOnClickListener(this);
@@ -157,6 +165,13 @@ public class DemoCamera81497Activity extends Activity implements OnClickListener
 
         if (imageIdx >= 0) // there is at least one image in the directory (show it!)
             displayImage();
+        else {
+            /*
+            * Remove image in case none are found inside the directory
+            * */
+            imageView.setImageResource(0);
+            imageCountView.setText(R.string.imageCountString);
+        }
 
         if (videoIdx >= 0) // there is at least one video in the directory (show it!)
             displayVideo();

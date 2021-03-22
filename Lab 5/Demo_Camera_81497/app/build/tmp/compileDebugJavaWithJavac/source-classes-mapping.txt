@@ -10,6 +10,13 @@ ca/yorku/eecs/mack/democamera81497/ImageDownloader.java
  ca.yorku.eecs.mack.democamera81497.ImageDownloader$DownloadedDrawable
 ca/yorku/eecs/mack/democamera81497/ImageListViewerActivity.java
  ca.yorku.eecs.mack.democamera81497.ImageListViewerActivity
+ ca.yorku.eecs.mack.democamera81497.ImageListViewerActivity$1
+ ca.yorku.eecs.mack.democamera81497.ImageListViewerActivity$MyFilenameFilter
+ca/yorku/eecs/mack/democamera81497/ImageViewerActivity.java
+ ca.yorku.eecs.mack.democamera81497.ImageViewerActivity
+ ca.yorku.eecs.mack.democamera81497.ImageViewerActivity$1
+ ca.yorku.eecs.mack.democamera81497.ImageViewerActivity$MyGestureListener
+ ca.yorku.eecs.mack.democamera81497.ImageViewerActivity$MyScaleGestureListener
 ca/yorku/eecs/mack/democamera81497/VideoViewerActivity.java
  ca.yorku.eecs.mack.democamera81497.VideoViewerActivity
  ca.yorku.eecs.mack.democamera81497.VideoViewerActivity$MyGestureListener

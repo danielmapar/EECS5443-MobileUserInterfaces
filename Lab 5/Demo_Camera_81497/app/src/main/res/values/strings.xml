@@ -12,5 +12,10 @@
     <string name="imageCountString">(image count)</string>
     <string name="videoCountString">(video count)</string>
     <string name="empty">Loading images &#8230;</string>
+    <string name="textString">(text here)</string>
+    <string name="textViewString">(filename)</string>
+    <string name="imageViewText">(Image goes here)</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_delete">Delete</string>
 
 </resources>

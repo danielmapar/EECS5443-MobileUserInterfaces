@@ -8,7 +8,12 @@
     <string name="empty">Loading images …</string>
     <string name="hello">Demo_Camera_81497</string>
     <string name="imageCountString">(image count)</string>
+    <string name="imageViewText">(Image goes here)</string>
     <string name="imageviewtext">(image goes here)</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_send">Send</string>
+    <string name="textString">(text here)</string>
+    <string name="textViewString">(filename)</string>
     <string name="videoCountString">(video count)</string>
     <string name="videoviewtext">(video goes here)</string>
 </resources>
