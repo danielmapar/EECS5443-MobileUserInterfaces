@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/q1_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/q1_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question1"
+                />
+
+            <RadioButton
+                android:id="@+id/q1_easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                android:text="@string/easy" />
+
+            <RadioButton
+                android:id="@+id/q1_neutral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/neutral" />
+
+            <RadioButton
+                android:id="@+id/q1_hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hard" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q2_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/q2_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question2" />
+
+            <RadioButton
+                android:id="@+id/q2_horizontal_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                android:text="@string/horizontal_swipe" />
+
+            <RadioButton
+                android:id="@+id/q2_vertical_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/vertical_swipe" />
+
+            <RadioButton
+                android:id="@+id/q2_no_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no_swipe" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/q3_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/q3_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question3" />
+
+            <RadioButton
+                android:id="@+id/q3_horizontal_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                android:text="@string/horizontal_swipe" />
+
+            <RadioButton
+                android:id="@+id/q3_vertical_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/vertical_swipe" />
+
+            <RadioButton
+                android:id="@+id/q3_no_swipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no_swipe" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/finish_experiment"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/finish_experiment"
+            android:onClick="onFinishExperiment"
+            />
+
+    </LinearLayout>
+</ScrollView>

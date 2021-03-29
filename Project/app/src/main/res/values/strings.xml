@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Swipe Analyses</string>
+
+    <string name="question1">How hard was to use this interface:</string>
+    <string name="question2">Which would you rather use in an app:</string>
+    <string name="question3">Which method is more addictive in your opinion:</string>
+
+    <string name="easy">Easy</string>
+    <string name="neutral">Neutral</string>
+    <string name="hard">Hard</string>
+
+    <string name="horizontal_swipe">Horizontal Swipe</string>
+    <string name="vertical_swipe">Vertical Swipe</string>
+    <string name="no_swipe">No Swipe (buttons)</string>
+
+    <string name="finish_experiment">Finish Experiment</string>
+
 </resources>

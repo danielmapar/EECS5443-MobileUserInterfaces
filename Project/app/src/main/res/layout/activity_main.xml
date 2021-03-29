@@ -24,6 +24,7 @@
 
         <Spinner
             android:id="@+id/userGroupId"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -31,6 +32,8 @@
             android:id="@+id/startExperiment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
             android:text="Start Experiment" />
 
     </LinearLayout>

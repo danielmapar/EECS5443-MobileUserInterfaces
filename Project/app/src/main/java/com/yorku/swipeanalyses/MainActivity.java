@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
             Intent myIntent = new Intent(MainActivity.this, CardStackActivity.class);
-            myIntent.putExtra("userGroupId", userGroupIdSpinner.getSelectedItem().toString()); //Optional parameters
+            myIntent.putExtra("username", nameInputField.getText().toString());
+            myIntent.putExtra("userGroupId", userGroupIdSpinner.getSelectedItem().toString());
             startActivity(myIntent);
             finish();
         });

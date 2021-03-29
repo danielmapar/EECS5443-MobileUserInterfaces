@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:clipChildren="false"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:clipToPadding="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:clipChildren="false"
@@ -56,10 +57,13 @@
         android:id="@+id/card_stack_view"
         android:layout_height="0dp"
         android:layout_width="0dp"
+        android:padding="20dp"
         tools:listitem="@layout/item_card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/fab_container"/>
+        app:layout_constraintBottom_toTopOf="@id/fab_container"
+        android:clipToPadding="false"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

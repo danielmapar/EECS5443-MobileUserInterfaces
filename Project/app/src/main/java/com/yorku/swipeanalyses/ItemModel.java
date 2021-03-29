@@ -2,31 +2,32 @@ package com.yorku.swipeanalyses;
 
 public class ItemModel {
     private int image;
-    private String nama, usia, kota;
+    private String name;
+    private int age;
+    private String city;
 
-    public ItemModel() {
-    }
 
-    public ItemModel(int image, String nama, String usia, String kota) {
+    public ItemModel(int image, String name, int age, String city) {
         this.image = image;
-        this.nama = nama;
-        this.usia = usia;
-        this.kota = kota;
+        this.name = name;
+        this.age = age;
+        this.city = city;
     }
 
     public int getImage() {
         return image;
     }
 
-    public String getNama() {
-        return nama;
+    public String getName() {
+        return name;
     }
 
-    public String getUsia() {
-        return usia;
+    public String getAge() {
+        return String.valueOf(age);
     }
 
-    public String getKota() {
-        return kota;
+    public String getCity() {
+        return city;
     }
+
 }
