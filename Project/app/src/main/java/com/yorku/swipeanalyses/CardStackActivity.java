@@ -66,6 +66,10 @@ public class CardStackActivity extends AppCompatActivity {
 
                 Long currentTime = System.currentTimeMillis();
 
+                Long diff = endOfLastSwipe == null ? currentTime - startOfExperiment : currentTime - endOfLastSwipe;
+
+                swipeTimes.add(diff);
+
                 if (manager.getTopPosition() == adapter.getItemCount()) {
                     Intent myIntent = new Intent(CardStackActivity.this, FeedbackActivity.class);
                     myIntent.putExtra("username", username);
@@ -75,10 +79,6 @@ public class CardStackActivity extends AppCompatActivity {
                     startActivity(myIntent);
                     finish();
                 }
-
-                Long diff = endOfLastSwipe == null ? currentTime - startOfExperiment : currentTime - endOfLastSwipe;
-
-                swipeTimes.add(diff);
 
                 endOfLastSwipe = currentTime;
 

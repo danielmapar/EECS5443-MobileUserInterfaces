@@ -23,7 +23,7 @@ public class ItemModel {
     }
 
     public String getAge() {
-        return String.valueOf(age);
+        return String.format("%s days old", age);
     }
 
     public String getCity() {
